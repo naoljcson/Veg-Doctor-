@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.vegdoc.view.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_disorder"
+            app:destination="@id/nav_disorder" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.vegdoc.view.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.vegdoc.view.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_disorder"
+        android:label="@string/app_name"
+        android:name="com.example.vegdoc.view.disorders.DisordersFragment"
+        tools:layout="@layout/fragment_disorders" >
+        <action
+            android:id="@+id/action_nav_disorder_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_disorder_to_problemListFragment"
+            app:destination="@id/problemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disorderDetailFragment"
+        android:name="com.example.vegdoc.view.disorderDetail.DisorderDetailFragment"
+        android:label="fragment_disorder_detail"
+        tools:layout="@layout/fragment_disorder_detail" >
+        <action
+            android:id="@+id/action_disorderDetailFragment_to_problemListFragment"
+            app:destination="@id/problemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/problemListFragment"
+        android:name="com.example.vegdoc.view.ProblemListFragment"
+        android:label="fragment_problem_list"
+        tools:layout="@layout/fragment_problem_list" >
+        <action
+            android:id="@+id/action_problemListFragment_to_nav_disorder"
+            app:destination="@id/nav_disorder" />
+        <action
+            android:id="@+id/action_problemListFragment_to_disorderDetailFragment"
+            app:destination="@id/disorderDetailFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument android:name="name" />
+    </fragment>
+
+
+</navigation>

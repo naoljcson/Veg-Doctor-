@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:strokeColor="@drawable/stroke_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/vegetableImage"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/img_cabbage"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/primaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/imgTitle"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
