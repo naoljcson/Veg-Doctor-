@@ -1,6 +1,8 @@
 package com.example.vegdoc.view.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -18,6 +20,8 @@ import com.example.vegdoc.R
 import com.example.vegdoc.adapter.VegetableAdapter
 import com.example.vegdoc.databinding.FragmentHomeBinding
 import com.example.vegdoc.model.Vegetable
+import com.example.vegdoc.util.Constants
+import com.example.vegdoc.util.PreferenceHelper
 import com.example.vegdoc.viewModel.VegetableViewModel
 
 
@@ -30,6 +34,7 @@ private var _binding: FragmentHomeBinding? = null
     private lateinit var viewModel: VegetableViewModel
     private lateinit var vegetableAdapter: VegetableAdapter
     private val vegetables = mutableListOf<Vegetable>()
+    private lateinit var preferences: SharedPreferences
 
 
   override fun onCreateView(
@@ -41,11 +46,11 @@ private var _binding: FragmentHomeBinding? = null
     val root: View = binding.root
 
       val vegetableRecyclerView: RecyclerView = binding.vegetableRecyclerView
-      vegetableRecyclerView.layoutManager = LinearLayoutManager(context!!, LinearLayoutManager.VERTICAL, false)
+      vegetableRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
       viewModel = ViewModelProvider(   this )[VegetableViewModel::class.java]
 
       vegetableAdapter = VegetableAdapter(vegetables,this)
-
+      preferences = PreferenceHelper.defaultPrefs(requireContext())
       // Setting the Adapter with the recyclerview
       vegetableRecyclerView.adapter = vegetableAdapter
 
@@ -58,21 +63,23 @@ override fun onDestroyView() {
         _binding = null
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun observeEvents() {
-        viewModel.allEvents.observe(viewLifecycleOwner, Observer { list ->
+        viewModel.allEvents.observe(viewLifecycleOwner) { list ->
             list?.let {
                 vegetables.clear()
                 vegetables.addAll(list)
                 vegetableAdapter.notifyDataSetChanged()
             }
-        })
+        }
     }
 
     override fun onClick(index: Int) {
-//        val navHostFragment = activity!!.supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
-//        val bundle = bundleOf("VEGETABLE_ID" to vegetables[index].id,"VEGETABLE_NAME" to vegetables[index].name)
-//        val navController = navHostFragment.navController
-//        navController.navigate(R.id.nav_disorder, bundle)
-        Navigation.createNavigateOnClickListener(R.id.action_nav_home_to_nav_disorder, bundleOf("id" to vegetables[index].id,"name" to vegetables[index].name)).onClick(view)
+        val lang = preferences.getString(Constants.CURRENT_LANGUAGE,"en")
+        var vegetableName = vegetables[index].name
+        if(lang.equals("am"))
+            vegetableName = vegetables[index].amharicName
+        Navigation.createNavigateOnClickListener(R.id.action_nav_home_to_nav_disorder,
+            bundleOf("id" to vegetables[index].id,"name" to vegetableName)).onClick(view)
     }
 }

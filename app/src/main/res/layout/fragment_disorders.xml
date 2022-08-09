@@ -46,7 +46,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Peast"
+                    android:text="@string/pest"
                     android:textAppearance="?attr/textAppearanceHeadline5"
                     android:textColor="@color/primaryDarkColor"
                     android:textStyle="bold"
@@ -100,7 +100,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Disease"
+                    android:text="@string/disease"
                     android:textAppearance="?attr/textAppearanceHeadline5"
                     android:textColor="@color/primaryDarkColor"
                     android:textStyle="bold"
@@ -154,7 +154,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Disorder"
+                    android:text="@string/disorder"
                     android:textAppearance="?attr/textAppearanceHeadline5"
                     android:textColor="@color/primaryDarkColor"
                     android:textStyle="bold"

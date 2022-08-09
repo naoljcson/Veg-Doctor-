@@ -10,9 +10,9 @@ import com.example.vegdoc.R
 import com.example.vegdoc.util.Constants.PROBLEM_ID
 import com.example.vegdoc.view.FirstFragment
 import com.example.vegdoc.view.SecondFragment
+import com.example.vegdoc.view.ThirdFragment
 
 
-//import com.example.vegdoc.view.R
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,
@@ -20,10 +20,6 @@ private val TAB_TITLES = arrayOf(
     R.string.tab_text_3
 )
 
-/**
- * A [FragmentPagerAdapter] that returns a fragment corresponding to
- * one of the sections/tabs/pages.
- */
 class SectionsPagerAdapter(private val context: Context, fm: FragmentManager,private val problemId: Int) :
     FragmentPagerAdapter(fm) {
 
@@ -37,7 +33,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager,pri
             fragment = SecondFragment()
             fragment.arguments = args
         }else if(position == 2){
-            fragment = SecondFragment()
+            fragment = ThirdFragment()
             fragment.arguments = args
         }
 
@@ -55,7 +51,4 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager,pri
     override fun getItemPosition(`object`: Any): Int {
         return super.getItemPosition(`object`)
     }
-
-
-
 }

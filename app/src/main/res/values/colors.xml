@@ -4,6 +4,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="black">#FF000000</color>
+    <color name="black_transparent">#5C000000</color>
     <color name="dark_gray">#424242</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primaryColor">#04ab04</color>
@@ -11,6 +12,7 @@
     <color name="primaryDarkColor">#007a00</color>
     <color name="imgTitle">#040445 </color>
     <color name="secondaryColor">#3aaa45</color>
-    <color name="secondaryLightColor">#fcfff3</color>
-    <color name="secondaryDarkColor">#007a16</color>
+    <color name="secondaryLightColor">#4CB556</color>
+    <color name="secondaryLightColor2">#97C4F58B</color>
+    <color name="secondaryDarkColor">#005C11</color>
 </resources>

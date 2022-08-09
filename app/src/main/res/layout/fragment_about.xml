@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/vegdoctor_logo"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/about_Title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:textColor="@color/primaryColor"
+                />
+
+            <TextView
+                android:id="@+id/aboutInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/about_Detail_Information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                />
+
+
+            <ImageView
+                android:id="@+id/supporters"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/contributers"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/contact_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/For_more_information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/primaryColor"
+                android:textColorLink="@color/secondaryLightColor"
+                />
+            <TextView
+                android:id="@+id/contact_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/contact_info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/primaryDarkColor"
+                android:textColorLink="@color/secondaryLightColor"
+                android:layout_marginBottom="12dp"
+
+                />
+
+
+        </TableLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

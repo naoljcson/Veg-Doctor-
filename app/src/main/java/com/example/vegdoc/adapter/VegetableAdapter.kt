@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vegdoc.MainActivity
 import com.example.vegdoc.R
 import com.example.vegdoc.model.Vegetable
+import com.example.vegdoc.util.Constants
+import com.example.vegdoc.util.PreferenceHelper
+import com.example.vegdoc.util.PreferenceHelper.get
 
 
 class VegetableAdapter(private val dataSet: List<Vegetable>,private val listener: OnRecyclerViewItemClickListener ) :
@@ -42,10 +45,15 @@ class VegetableAdapter(private val dataSet: List<Vegetable>,private val listener
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.primaryTitle.text = dataSet[position].name
+        val context = viewHolder.itemView.context
+        val language = PreferenceHelper.defaultPrefs(context).getString(Constants.CURRENT_LANGUAGE,"en")
+        var vegetableName =  dataSet[position].name
+        if(language.equals("am"))
+            vegetableName =  dataSet[position].amharicName
+        viewHolder.primaryTitle.text = vegetableName
         viewHolder.itemView.setOnClickListener {listener.onClick(position)  }
 
-        val context = viewHolder.itemView.context
+
         val packageName = context.packageName
         val resId = context.resources.getIdentifier(dataSet[position].imageName, "drawable", packageName)
         viewHolder.vegetableImage.setImageResource(resId)

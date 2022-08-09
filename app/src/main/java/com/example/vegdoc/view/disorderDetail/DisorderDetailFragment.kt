@@ -1,5 +1,6 @@
 package com.example.vegdoc.view.disorderDetail
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -35,16 +36,18 @@ class DisorderDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity).setTitle(args.name)
-
         val sectionsPagerAdapter = SectionsPagerAdapter(requireContext(), childFragmentManager,args.id)
         val viewPager: ViewPager = binding.viewPager
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
+    }
 
-
-
+    override fun onResume() {
+        super.onResume()
+        if(activity != null){
+            (activity as MainActivity).setTitle(args.name)
+        }
     }
 
     override fun onDestroy() {

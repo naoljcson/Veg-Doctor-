@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.AboutAgtrainFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/agtrain_logo"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_activity_about_Agtrain_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/aboutInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/detailInfo_about_Agtrain"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+
+
+
+
+            <TextView
+                android:id="@+id/contact_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/For_more_information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/primaryDarkColor"
+                android:textColorLink="@color/secondaryLightColor"
+                />
+            <TextView
+                android:id="@+id/contact_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/contact_info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/primaryDarkColor"
+                android:textColorLink="@color/secondaryLightColor"
+                android:layout_marginBottom="12dp"
+
+                />
+
+
+        </TableLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_nav_disorder_to_problemListFragment"
             app:destination="@id/problemListFragment" />
+        <argument
+            android:name="title"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/disorderDetailFragment"
@@ -79,6 +82,26 @@
             android:defaultValue="0" />
         <argument android:name="name" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.vegdoc.view.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_about_agtrain"
+        android:name="com.example.vegdoc.view.AboutAgtrainFragment"
+        android:label="@string/menu_about_agtrain"
+        tools:layout="@layout/fragment_about_agtrain" />
+    <fragment
+        android:id="@+id/nav_about_hort_life_project"
+        android:name="com.example.vegdoc.view.AboutHortLifeProjectFragment"
+        android:label="@string/menu_about_hort_life_project"
+        tools:layout="@layout/fragment_about_hort_life_project" />
+    <fragment
+        android:id="@+id/nav_references"
+        android:name="com.example.vegdoc.view.ReferencesFragment"
+        android:label="@string/menu_references"
+        tools:layout="@layout/fragment_references" />
 
 
 </navigation>

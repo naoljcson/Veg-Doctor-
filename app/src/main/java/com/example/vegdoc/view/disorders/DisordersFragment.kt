@@ -1,5 +1,7 @@
 package com.example.vegdoc.view.disorders
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -38,16 +40,23 @@ class DisordersFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        super.onCreateView(inflater, container, savedInstanceState)
         _binding = FragmentDisordersBinding.inflate(inflater, container, false)
 
         vegetableId = args.id
-        (activity as MainActivity).setTitle(args.name)
-
         problemViewModel = ViewModelProvider(this, )[ProblemViewModel::class.java]
 
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        if(activity != null){
+            (activity as MainActivity).setTitle(args.name)
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
     @OptIn(DelicateCoroutinesApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -58,21 +67,21 @@ class DisordersFragment : Fragment() {
             peasts = problemViewModel.allProblemsByVegetableId(vegetableId, "Pest")
             diseases = problemViewModel.allProblemsByVegetableId(vegetableId,"Disease")
             disorders = problemViewModel.allProblemsByVegetableId(vegetableId,"Disorder")
-
+            val numberOfElement = getString(R.string.numberOfElement)
             with(binding){
-                numberOfPeasts.text = "Number Of Elements : ${peasts.count()}"
-                numberOfDiseases.text  = "Number Of Elements : ${diseases.count()}"
-                numberOfDisOrders.text  = "Number Of Elements : ${disorders.count()}"
+               numberOfPeasts.text =  "$numberOfElement ${peasts.count()}"
+                numberOfDiseases.text  = "$numberOfElement ${diseases.count()}"
+                numberOfDisOrders.text  ="$numberOfElement ${disorders.count()}"
 
-                peastCard.setOnClickListener { openDisorderDetail("Pest") }
-                diseaseCard.setOnClickListener { openDisorderDetail("Disease")  }
-                disorderCard.setOnClickListener { openDisorderDetail("Disorder")  }
+                peastCard.setOnClickListener { openDisorderDetail("Pest",getString(R.string.pest)) }
+                diseaseCard.setOnClickListener { openDisorderDetail("Disease",getString(R.string.disease))  }
+                disorderCard.setOnClickListener { openDisorderDetail("Disorder",getString(R.string.disorder))  }
             }
         }
     }
 
-    private fun openDisorderDetail(type: String){
+    private fun openDisorderDetail(type: String,title: String){
         Navigation.createNavigateOnClickListener(R.id.action_nav_disorder_to_problemListFragment,
-            bundleOf("id" to vegetableId,"type" to type)).onClick(view)
+            bundleOf("id" to vegetableId,"type" to type,"title" to title)).onClick(view)
     }
 }

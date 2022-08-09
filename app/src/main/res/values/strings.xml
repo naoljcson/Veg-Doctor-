@@ -1,14 +1,26 @@
 <resources>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Veg Doctor</string>
+    <string name="nav_header_subtitle">Designed &amp; Developed by AGTRAIN Trading</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_about">About</string>
+    <string name="menu_about_agtrain">About AgTrain</string>
+    <string name="menu_about_hort_life_project">About Horti-Life Project</string>
+    <string name="menu_references">References</string>
+
     <string name="tab_text_1">Description</string>
     <string name="tab_text_2">Products</string>
     <string name="tab_text_3">Images</string>
+
+
+    <string name="pest">Pest</string>
+    <string name="disease">Disease</string>
+    <string name="disorder">Disorder</string>
+
+
     <string name="title_activity_detail_information">DetailInformationActivity</string>
     <string name="title_activity_dis_order_list">DisOrderListActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -21,15 +33,15 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
 
-<string name="app_name">Veg Doctor</string>
-<string name="app_Name_For_Splash">Ethiopian Vegetable Pests and Disease Guide</string>
-<string name="developedBy_For_Splash">By AGTRAIN</string>
+    <string name="app_name">Veg Doctor</string>
+    <string name="app_Name_For_Splash">Ethiopian Vegetable Pests and Disease Guide</string>
+    <string name="developedBy_For_Splash">By AGTRAIN</string>
 
-<string name="navigation_drawer_open">Open navigation drawer</string>
-<string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-<string name="references_Title">References</string>
-<string name="references">Bargeron, C.T., J.H. LaForest, J. Brock, D.B. Langston &amp; R.L. David, B. Dutta. (2015).
+    <string name="references_Title">References</string>
+    <string name="references">Bargeron, C.T., J.H. LaForest, J. Brock, D.B. Langston &amp; R.L. David, B. Dutta. (2015).
         \n\nVegDr Android App. (Version 2.0) [Mobile application software]. Available at https://play.google.com/store/apps/details?id=com.bugwood.
         \n\nvegetabledoctor Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         \n\nA PRACTICAL GUIDE TO IDENTIFICATION AND CONTROL OF PEPPER DISEASES, TROPICA SEEDS PVT LTD R &amp; D department Bangalore 560004 INDIA
@@ -41,8 +53,8 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         \n\nCABBAGE BASIC PRODUCTION PRACTICES TECHNICAL BROCHURE and LEAF LET, SNV Netherlands Development organization
 </string>
 
-<string name="title_activity_about_Agtrain_title">About AgTraIn</string>
-<string name="detailInfo_about_Agtrain">AgTraIn PLC (Agricultural Transformation by Innovation)
+    <string name="title_activity_about_Agtrain_title">About AgTraIn</string>
+    <string name="detailInfo_about_Agtrain">AgTraIn PLC (Agricultural Transformation by Innovation)
         is a privately owned Ethiopian Company registered in Ethiopia. The company is working mainly
         on developing and delivering technological products and services for the agricultural sector.\n
         The company focus on developing technological supporting tools for the two main farming components
@@ -54,7 +66,7 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         them manage the risks accordingly and thereby  increase yield.
 </string>
 
-<string name="title_activity_about_Agtrain">AgTraIn PLC (Agricultural Transformation by Innovation)
+    <string name="title_activity_about_Agtrain">AgTraIn PLC (Agricultural Transformation by Innovation)
         is a privately owned Ethiopian Company registered in Ethiopia. The company is working mainly
         on developing and delivering technological products and services for the agricultural sector.
         The company focus on developing technological supporting tools for the two main farming components
@@ -65,8 +77,8 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         and extension agents to get timely advice by reading and comparing with the pictures. It will
         help to manage them accordingly so as to increase yield and be productivity. </string>
 
-<string name="title_activity_about_HortiLife_Title">About Horti-Life Project</string>
-<string name="title_activity_about_HortiLife">The Horti-LIFE project aim to address issues of low productivity
+    <string name="title_activity_about_HortiLife_Title">About Horti-Life Project</string>
+    <string name="title_activity_about_HortiLife">The Horti-LIFE project aim to address issues of low productivity
         and the high pressure from pests and diseases that horticultural smallholders are facing by
         establishing Farmer Field Schools (FFS) to capacitate smallholders to adapt Good Agricultural
         Practices (GAP) and Integrated Pest Management (IPM) practices in their horticultural production.
@@ -80,9 +92,9 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         information included in the PRESENT mobile application.
 </string>
 
-<string name="title_activity_about">About</string>
-<string name="about_Title">Ethiopian Vegetable Insect Pests and Disease Guide</string>
-<string name="about_Detail_Information"><b>VegDr provides you information for vegetable pest, diseases
+    <string name="title_activity_about">About</string>
+    <string name="about_Title">Ethiopian Vegetable Insect Pests and Disease Guide</string>
+    <string name="about_Detail_Information"><b>VegDr provides you information for vegetable pest, diseases
         and disorders.</b> The app includes 4 vegetable crops which Horti-LIFE project is
         working on (Onion, Pepper, Tomato and Cabbage). The app contains information on 20 pests\',
         35 diseases\', and 13 disorders\' images of the symptoms, IPM recommendations and lists
@@ -91,84 +103,84 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         Farmers Field School. \n\nVegDr is developed by AgTraIn PLC and funding provided by the Horti-LIFE
         project of SNV Netherlands Development Organization.
     </string>
-<string name="contact_info"><b>AgTraIn plc</b>,\t agtraintrading@gmail.com, redietzewdu12@gmail.com, andnetbay@gmail.com</string>
+    <string name="contact_info"><b>AgTraIn plc</b>,\t agtraintrading@gmail.com, redietzewdu12@gmail.com, andnetbay@gmail.com</string>
 
-<string name="action_settings">Change Language</string>
-<string name="onion">Onion</string>
-<string name="onion_AMH">ሽንኩርት</string>
-<string name="cabbage">Cabbage</string>
-<string name="cabbage_AMH">ጥቅል ጎመን</string>
-<string name="tomato">Tomato</string>
-<string name="tomato_AMH">ቲማቲም</string>
-<string name="pepper">Pepper</string>
-<string name="pepper_AMH">ቃሪያ</string>
-<string name="title_activity_sub_menu">SubMenuActivity</string>
-<string name="title_activity_cabbage__sub_menue">Cabbage_SubMenue</string>
-<string name="title_activity_problem_category">problems</string>
-<string name="category_Image_Description">categoryImageDescription</string>
+    <string name="action_settings">Change Language</string>
+    <string name="onion">Onion</string>
+    <string name="onion_AMH">ሽንኩርት</string>
+    <string name="cabbage">Cabbage</string>
+    <string name="cabbage_AMH">ጥቅል ጎመን</string>
+    <string name="tomato">Tomato</string>
+    <string name="tomato_AMH">ቲማቲም</string>
+    <string name="pepper">Pepper</string>
+    <string name="pepper_AMH">ቃሪያ</string>
+    <string name="title_activity_sub_menu">SubMenuActivity</string>
+    <string name="title_activity_cabbage__sub_menue">Cabbage_SubMenue</string>
+    <string name="title_activity_problem_category">problems</string>
+    <string name="category_Image_Description">categoryImageDescription</string>
 
-<string name="designed_and_Developed_by">Designed and Developed by AGTRAIN Trading</string>
-<string name="license_Information">License Information</string>
-<string name="share">Share</string>
-<string name="choose_Language">Choose Language....</string>
-<string name="For_more_information">For more information, contact:</string>
-<string name="numberOfElement">available problem list = </string>
-<string name="title_activity_problem_sub_category">problem_subCategory</string>
-<string name="subCategory_Activity_Title">Problem List</string>
-<string name="subMenu_English">Main Title</string>
-<string name="subMenu_Amharic">ንዑስ ርዕስ</string>
+    <string name="designed_and_Developed_by">Designed and Developed by AGTRAIN Trading</string>
+    <string name="license_Information">License Information</string>
+    <string name="share">Share</string>
+    <string name="choose_Language">Choose Language....</string>
+    <string name="For_more_information">For more information, contact:</string>
+    <string name="numberOfElement">available problem list = </string>
+    <string name="title_activity_problem_sub_category">problem_subCategory</string>
+    <string name="subCategory_Activity_Title">Problem List</string>
+    <string name="subMenu_English">Main Title</string>
+    <string name="subMenu_Amharic">ንዑስ ርዕስ</string>
 
 
-<!-- TODO: Remove or change this placeholder text -->
-<string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!-- Detail Information layout  Tab Information-->
-<string name="title_activity_detail__information">Detail Information</string>
-<string name="Tab_description">Description</string>
-<string name="Tab_Efficacy">Efficacy</string>
-<string name="Tab_PestControl_Recommendation">Product</string>
-<string name="Tab_ImageSymptoms">Images</string>
+    <!-- Detail Information layout  Tab Information-->
+    <string name="title_activity_detail__information">Detail Information</string>
+    <string name="Tab_description">Description</string>
+    <string name="Tab_Efficacy">Efficacy</string>
+    <string name="Tab_PestControl_Recommendation">Product</string>
+    <string name="Tab_ImageSymptoms">Images</string>
 
-<string name="cabbage_categoryTitle">Cabbage </string>
-<string name="onion_categoryTitle">Onion </string>
-<string name="Pepper_categoryTitle">Pepper </string>
-<string name="Tomato_categoryTitle">Tomato </string>
-<!-- Bullated_List-->
-<string name="bullted_list"><b><big>Bulleted List</big></b>
+    <string name="cabbage_categoryTitle">Cabbage </string>
+    <string name="onion_categoryTitle">Onion </string>
+    <string name="Pepper_categoryTitle">Pepper </string>
+    <string name="Tomato_categoryTitle">Tomato </string>
+    <!-- Bullated_List-->
+    <string name="bullted_list"><b><big>Bulleted List</big></b>
         \n <li>Item one</li>
         \n <li>Item two</li>
         \n <li>Item three</li>
     </string>
 
-<!-- Description Fragment-->
-<string name="problem_MainTitle"> Problem Main Title</string>
-<string name="problem_subTitle"> Problem sub Title</string>
-<string name="problem_Description">Detail information</string>
-<string name="recommendation_Title_Pest">Integrated Pest Management Recommendation</string>
-<string name="recommendation_Title1_Disease">Integrated Disease Management Recommendation</string>
-<string name="recommendation_Title1_Disorder">Recommendation</string>
-<string name="recommendation_Detail">Recommendation Detail Information</string>
+    <!-- Description Fragment-->
+    <string name="problem_MainTitle"> Problem Main Title</string>
+    <string name="problem_subTitle"> Problem sub Title</string>
+    <string name="problem_Description">Detail information</string>
+    <string name="recommendation_Title_Pest">Integrated Pest Management Recommendation</string>
+    <string name="recommendation_Title1_Disease">Integrated Disease Management Recommendation</string>
+    <string name="recommendation_Title1_Disorder">Recommendation</string>
+    <string name="recommendation_Detail">Recommendation Detail Information</string>
 
-<!-- Efficacy Fragment -->
-<string name="efficacyTitle">List of Effective Products</string>
+    <!-- Efficacy Fragment -->
+    <string name="efficacyTitle">List of Effective Products</string>
 
-<!-- Image Fragment -->
-<string name="imageInformation_Title">Image Information</string>
-<string name="com_google_android_gms_fonts_certs"> as</string>
+    <!-- Image Fragment -->
+    <string name="imageInformation_Title">Image Information</string>
+    <string name="com_google_android_gms_fonts_certs"> as</string>
 
-<string name="pestControl_RecommendationTitle">Pest Control Recommendation</string>
-<!-- Cabbage Detail Information English-->
-<string name="problemName"> </string>
+    <string name="pestControl_RecommendationTitle">Pest Control Recommendation</string>
+    <!-- Cabbage Detail Information English-->
+    <string name="problemName"> </string>
 
 
-<!-- Cabbage Detail Information English-->
+    <!-- Cabbage Detail Information English-->
 
-<!-- Disease -->
-<string name="Cabbage_Club_root_Title">Club Root</string>
-<string name="Cabbage_Club_root">Club root of cabbage is caused by caused by the soil borne fungus
+    <!-- Disease -->
+    <string name="Cabbage_Club_root_Title">Club Root</string>
+    <string name="Cabbage_Club_root">Club root of cabbage is caused by caused by the soil borne fungus
         Plasmodiophora brassicae. The ideal temperature for the fungus is between 13\u00B0 and 15\u00B0C. Club root
         mainly occur in acid and wet soil. Affected plants are wilting and turn from pale green to yellow on separated spots in the field. The fungus enters the plant through the roots, and makes root swell up. These roots will not function anymore. Spores of the disease are mainly spread by water and contaminated soil. Spores of the fungus can survive up to 7 years in the soil.</string>
-<string name="Cabbage_Club_root_IPM_Recomm">\nKeep the PH of the soil above 7, by limiting the soil and use drains to avoid wet spots.
+    <string name="Cabbage_Club_root_IPM_Recomm">\nKeep the PH of the soil above 7, by limiting the soil and use drains to avoid wet spots.
         \nFertilize with calcium based nitrogen to stimulate the growth of new roots.
 \nThere are resistant varieties available, but they do not bring total protection, because of the different strains of club root.
 \nChoose resistant cultivars when possible.
@@ -178,21 +190,21 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
 \nCarefully remove infected plants and sterilize garden tools (one part bleach to 4 parts water) after use
     </string>
 
-<!--Verticillium wilt-->
-<string name="Cabbage_Verticillium_wilt_Title">Verticillium Wilt</string>
-<string name="Cabbage_Verticillium_wilt">Verticillium dahliae is a fungal plant pathogen. It causes
+    <!--Verticillium wilt-->
+    <string name="Cabbage_Verticillium_wilt_Title">Verticillium Wilt</string>
+    <string name="Cabbage_Verticillium_wilt">Verticillium dahliae is a fungal plant pathogen. It causes
         vascular wilt of Brassica and many plant species, causing leaves to curl and discolor. Verticillium
         develops under cool conditions (15\u00B0-19\u00B0C). This disease causes V-Shaped lesions with yellow borders
         formed along the margins of the lower leaves. One sided discoloration on the leaf is possible.
         The vascular system of the infected plant will turn dark and brown. The fungus survives in the soil,
         continuous cropping will make the disease build up.</string>
-<string name="Cabbage_Verticillium_wilt_IPM_Recomm">A good crop rotation is very important to keep this disease from building up.\n
+    <string name="Cabbage_Verticillium_wilt_IPM_Recomm">A good crop rotation is very important to keep this disease from building up.\n
         Destroying all infected plants at the site as well as any susceptible weeds.\n
         Use of resistant cultivars is the most effective method for control of Verticillium wilt\n</string>
 
-<!-- Fusarium yellows-->
-<string name="Cabbage_Fusarium_Yellows_Title">Cabbage Fusarium Yellows</string>
-<string name="Cabbage_Fusarium_Yellows">Fusarium yellows is a warm-weather disease caused by the soilborne
+    <!-- Fusarium yellows-->
+    <string name="Cabbage_Fusarium_Yellows_Title">Cabbage Fusarium Yellows</string>
+    <string name="Cabbage_Fusarium_Yellows">Fusarium yellows is a warm-weather disease caused by the soilborne
         fungus Fusarium oxysporum f. sp. conglutinans. The fungus is closely related to, but distinct from,
         fungi causing Fusarium wilts of melons, peas, pepper, potato, sweet potato, tomato, carnation,
         China aster, gladiolus, cotton, and numerous other plants. Fusarium yellow needs a soil
@@ -200,66 +212,66 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         The leaves of the plant will become twisted because of blocked vascular system. This blocking
         can be checking by cutting the stem of the plant, brown discoloration will be visible. Fusarium
         usually affect spots on the field. Spores of the fungus can survive in the soil for several years.</string>
-<string name="Cabbage_Fusarium_Yellows_IPM_Recomm">Resistant varieties are available and provided the most effective control.\n
+    <string name="Cabbage_Fusarium_Yellows_IPM_Recomm">Resistant varieties are available and provided the most effective control.\n
 Grow transplants in soil that has been disinfested by steam or a soil fumigant.\n
 Rotate the field or garden to non-host crops such as lettuce, peppers, or tomatoes for several years to prevent buildup of the Fusarium fungus in the soil.\n
 Purchase only certified, disease-free seed or transplants of resistant varieties.\n
 Keep the fungus out of yellows-free fields and gardens by preventing the spread of infested soil carried on equipment, tools, feet, and running water.\n
 Do not put crop debris in compost or manure piles.\n</string>
 
-<!-- Black leaf spots-->
-<string name="Cabbage_Black_leaf_spots_Title">Black Leaf Spots</string>
-<string name="Cabbage_Black_leaf_spots">Alternaria Leaf Spot is a common disease of cabbage caused
+    <!-- Black leaf spots-->
+    <string name="Cabbage_Black_leaf_spots_Title">Black Leaf Spots</string>
+    <string name="Cabbage_Black_leaf_spots">Alternaria Leaf Spot is a common disease of cabbage caused
         by the fungal pathogen Alternaria brassicicola. Alternaria prefers warm (20\u00B0-25\u00B0C) and humid conditions.
         Many black spots will appear on the leaves, stem veins and heads of the cabbage. The spores can survive
         on the crop residue and spread through wind, soil and water. The fungus can also infect seeds. The
         seedlings of contaminated seeds will die as a young plants.</string>
-<string name="Cabbage_Black_leaf_spots_IPM_Recomm">A clean start is important make sure that the seed are not contaminated.\n
+    <string name="Cabbage_Black_leaf_spots_IPM_Recomm">A clean start is important make sure that the seed are not contaminated.\n
 Seed treatment can prevent the disease from spreading at a young stage.\n
 A minimum two year crop rotation is recommended, alternating with non-cruciferous crops.\n
 Elimination of crop residue are important in the prevention of the disease.\n</string>
 
-<!-- Light leaf spots-->
-<string name="Cabbage_Light_leaf_spots_Title">Light Leaf Spots</string>
-<string name="Cabbage_Light_leaf_spots">Light leaf spots is caused by a plant pathogen Pyrenopeziza
+    <!-- Light leaf spots-->
+    <string name="Cabbage_Light_leaf_spots_Title">Light Leaf Spots</string>
+    <string name="Cabbage_Light_leaf_spots">Light leaf spots is caused by a plant pathogen Pyrenopeziza
         brassicae and infecting Brassicaceae family. Light leaf spots favors cool temperatures (16\u00B0C)
         and leaves and to be wet for at least 48 hours. The fungus can slow the development of the
         infected plant. Small irregular brown spots will form on infected part of the plant. There
         spots can tear open easily. Spores of the fungus appear together in a circle. Spores of the
         fungus can travel by wind, but they need water to enter the plant.</string>
-<string name="Cabbage_Light_leaf_spots_IPM_Recomm">It is important to clean the field of the plant debris after harvest to prevent light leaf spots from making spores.\n
+    <string name="Cabbage_Light_leaf_spots_IPM_Recomm">It is important to clean the field of the plant debris after harvest to prevent light leaf spots from making spores.\n
 Crop rotation can reduce the pressure of the disease.\n
 Some varieties are more susceptible than others.\n</string>
 
-<!--Phytophthora-->
-<string name="Cabbage_Phytophthora_Title">Phytophthora</string>
-<string name="Cabbage_Phytophthora">Phytophthora is a genus of plant-damaging oomycetes (water molds).
+    <!--Phytophthora-->
+    <string name="Cabbage_Phytophthora_Title">Phytophthora</string>
+    <string name="Cabbage_Phytophthora">Phytophthora is a genus of plant-damaging oomycetes (water molds).
         Phytophthora prefers temperatures above 13\u00B0C and the presence of water on the field. Water is
         important for Phytophthora: the fungus travels through it and only affects plants at wet spots
         on the field. Usually plants which are weakened by flooding will be affected. Infected plants
         will wilt and eventually rot. The fungus enters the plants through the root system. The fungus
         produces spores which can survive in the soil.</string>
-<string name="Cabbage_Phytophthora_IPM_Recomm">Make sure there is a good structure and drainage available.\n
+    <string name="Cabbage_Phytophthora_IPM_Recomm">Make sure there is a good structure and drainage available.\n
 It is important the top layer of the soil does not get soaked.\n
 A crop rotation of 3 years is advisable.\n</string>
 
-<!-- Black rot-->
-<string name="Cabbage_Black_Rot_Title">Black Rot</string>
-<string name="Cabbage_Black_Rot">Black rot, caused by the bacterium Xanthomonas campestris pv. campestris,
+    <!-- Black rot-->
+    <string name="Cabbage_Black_Rot_Title">Black Rot</string>
+    <string name="Cabbage_Black_Rot">Black rot, caused by the bacterium Xanthomonas campestris pv. campestris,
         is considered the most serious disease. The bacterial development most quickly under hot >25\u00B0C and humid
         conditions. The infection starts at the stomata at the end of the leaf margins, hydathodes, with yellow to
         brown V-shaped lesions. Another symptom is blackening of veins. The disease spreads by soil, water, men,
         machinery and can be seed born.</string>
-<string name="Cabbage_Black_Rot_IPM_Recomm">There are no resistant varieties available, but there is big difference in susceptibility between varieties.\n
+    <string name="Cabbage_Black_Rot_IPM_Recomm">There are no resistant varieties available, but there is big difference in susceptibility between varieties.\n
 There is no chemical available for Black Rot.\n
 Treatment with copper fungicides will keep the bacterial from spreading.\n
 Do not enter infected fields in the morning when the plant is guttering, and remove weeds from the field, so they cannot act as a host.\n
 Crop rotation of more than 4 years is recommended.\n</string>
 
 
-<!--Damping off-->
-<string name="Cabbage_Damping_Off_Title">Damping off</string>
-<string name="Cabbage_Damping_Off">Damping off is caused by fungus or fungus-like microorganisms,
+    <!--Damping off-->
+    <string name="Cabbage_Damping_Off_Title">Damping off</string>
+    <string name="Cabbage_Damping_Off">Damping off is caused by fungus or fungus-like microorganisms,
         Pythium spp., Phytophthora spp., Fusarium spp., Rhizoctonia solani, and other fungi. Affected
         plants usually occur in patches in nursery beds or in low parts of sloped fields. In level fields,
         affected plants are generally found in scattered areas. \nDamping off may occur before and/or
@@ -269,7 +281,7 @@ Crop rotation of more than 4 years is recommended.\n</string>
         (roots, hypocotyls and perhaps the crown of the plant) are pale brown, soft, water soaked, and
         thinner than non-affected tissue. Infected stems collapse. Stunting of plants due to root rot or
         collar rot may also occur.</string>
-<string name="Cabbage_Damping_Off_IPM_Recomm">use plug transplants and a soilless pathogen-free growth medium \n
+    <string name="Cabbage_Damping_Off_IPM_Recomm">use plug transplants and a soilless pathogen-free growth medium \n
 Water seedlings only when the soil or growth medium is dry, preferably in the morning to allow drying to occur by the late afternoon.\n
 Avoid contact with ground soil or other sources of contamination.\n
 Choose well-drained locations and Keep the seedbed well ventilated and Sow on raised beds.\n
@@ -278,24 +290,24 @@ Workers should clean their hands and tools before handling healthy plants.\n
 Surface irrigation ponds may be a source of fungal contamination.\n
 Pots or transplant containers should be new or treated recently with a disinfectant (10% household bleach) or\n</string>
 
-<!-- Pests -->
+    <!-- Pests -->
 
-<!--Diamondback moth-->
-<string name="Cabbage_Diamondback_Moth_Title">Diamondback Moth</string>
-<string name="Cabbage_Diamondback_moth">The diamondback moth (Plutella xylostella), sometimes
+    <!--Diamondback moth-->
+    <string name="Cabbage_Diamondback_Moth_Title">Diamondback Moth</string>
+    <string name="Cabbage_Diamondback_moth">The diamondback moth (Plutella xylostella), sometimes
         called the cabbage moth, is a moth species belonging to the family Plutellidae and genus
         Plutella. The small, grayish-brown moth sometimes has a cream-colored band that forms a
         diamond along its back. The insects feed on all crucifers; all parts above the ground can
         be eaten by the caterpillar. Mainly the leaves, but also growing points can be attacked.
         The adults lay groups of yellow eggs on the lower side of the leaves. The caterpillars from
         these eggs will cause the damage.</string>
-<string name="Cabbage_Diamondback_Moth_IPM_Recomm">It is important to prevent the adult from laying eggs to make sure there are no caterpillars in the crop.\n
+    <string name="Cabbage_Diamondback_Moth_IPM_Recomm">It is important to prevent the adult from laying eggs to make sure there are no caterpillars in the crop.\n
 Diamond black moth can be controlled both chemically and with Bacillus thuringiensis based products, the latter only work in warm conditions.\n</string>
 
 
-<!-- Thrips-->
-<string name="Cabbage_Thrips_Title">Thrips</string>
-<string name="Cabbage_Thrips">Thrips angusticeps is an insect pest on crops of flax, cereals and
+    <!-- Thrips-->
+    <string name="Cabbage_Thrips_Title">Thrips</string>
+    <string name="Cabbage_Thrips">Thrips angusticeps is an insect pest on crops of flax, cereals and
         peas and Onion Thrips Thripa tabaci. They are small (2mm) insect pests classified under Thysanoptera:
         Thripidae. Adult thrips are thin and small insect has light yellow to brown color slender insects
         with fringed wings. The larvae has similar appearance with very light color and no wings.
@@ -303,14 +315,14 @@ Diamond black moth can be controlled both chemically and with Bacillus thuringie
         cells. The damaged cell forms an oedema. This can lead to losses in storage cabbage. Thrips
         have a lot hosts (leek, onion, carrot, wheat and cabbage) and can overwinter. The pressure is
         highest in dry and hot conditions, because then the development from larvae to adult is a lot shorter.</string>
-<string name="Cabbage_Thrips_IPM_Recomm">Chemical control for thrips is possible, but difficult because the insect can hide between the layers of the cabbage\n
+    <string name="Cabbage_Thrips_IPM_Recomm">Chemical control for thrips is possible, but difficult because the insect can hide between the layers of the cabbage\n
 It is important to spray early in the morning or late in the evening when the insect is active.\n
 There is a difference in susceptibility between varieties.\n</string>
 
 
-<!-- Cabbage Aphids-->
-<string name="Cabbage_Aphids_Title">Cabbage Aphids</string>
-<string name="Cabbage_Aphids">Cabbage aphid or cabbage aphis, (Brevicoryne brassicae) are around
+    <!-- Cabbage Aphids-->
+    <string name="Cabbage_Aphids_Title">Cabbage Aphids</string>
+    <string name="Cabbage_Aphids">Cabbage aphid or cabbage aphis, (Brevicoryne brassicae) are around
         2mm long and look gray-green covered with powdery substance. The aphids feed on many varieties
         of produce, including cabbage, broccoli (especially), Brussels sprouts, cauliflower and many
         other members of the genus Brassica, but do not feed on plants outside of the Brassicaceae family.
@@ -318,44 +330,44 @@ There is a difference in susceptibility between varieties.\n</string>
         will become rough, curly and purple. Aphids overwinter as eggs on crucifers, in spring they form
         the first generations. In September the first winged males will occur and start mating, the
         females then lay the eggs for overwintering.</string>
-<string name="Cabbage_Aphids_IPM_Recomm">Clear the field of plant debris and cruciferous weeds so the aphids have nowhere to overwinter.\n
+    <string name="Cabbage_Aphids_IPM_Recomm">Clear the field of plant debris and cruciferous weeds so the aphids have nowhere to overwinter.\n
 Aphids can controlled chemically.\n</string>
 
-<!-- Cabbage Disorder-->
+    <!-- Cabbage Disorder-->
 
-<!-- Bolting-->
-<string name="Cabbage_Bolting_Title">Bolting</string>
-<string name="Cabbage_Bolting">If the night temperatures are low, the plant will start to flower
+    <!-- Bolting-->
+    <string name="Cabbage_Bolting_Title">Bolting</string>
+    <string name="Cabbage_Bolting">If the night temperatures are low, the plant will start to flower
         early and prematurely run to seed, usually making them unusable. Occurs in Broccoli, Brussels
         sprouts, Cauliflower, and Headed cabbage.</string>
-<string name="Cabbage_Bolting_IPM_Recomm">There is difference in susceptibility between varieties.\n
+    <string name="Cabbage_Bolting_IPM_Recomm">There is difference in susceptibility between varieties.\n
 There are resistant varieties available.\n</string>
 
-<!-- Splitting, Cracking and doubling-->
-<string name="Cabbage_Splitting_Cracking_and_doubling_Title">Splitting, Cracking and Doubling</string>
-<string name="Cabbage_Splitting_Cracking_and_doubling">Occurs in Broccoli, Cauliflower, and Headed cabbage.
+    <!-- Splitting, Cracking and doubling-->
+    <string name="Cabbage_Splitting_Cracking_and_doubling_Title">Splitting, Cracking and Doubling</string>
+    <string name="Cabbage_Splitting_Cracking_and_doubling">Occurs in Broccoli, Cauliflower, and Headed cabbage.
         The curd of the cauliflower is cracked so the head becomes unmarketable. This disorder is caused by
         interrupted and too fast growth.</string>
-<string name="Cabbage_Splitting_Cracking_and_doubling_IPM_Recomm">Make sure the plant has a continuous growth.\n
+    <string name="Cabbage_Splitting_Cracking_and_doubling_IPM_Recomm">Make sure the plant has a continuous growth.\n
 There is a difference in susceptibility between varieties.\n</string>
 
-<!--Bracting-->
-<string name="Cabbage_Bracting_Title">Bracting</string>
-<string name="Cabbage_Bracting">In broccoli and cauliflower. Covering leaves grow through the curd.
+    <!--Bracting-->
+    <string name="Cabbage_Bracting_Title">Bracting</string>
+    <string name="Cabbage_Bracting">In broccoli and cauliflower. Covering leaves grow through the curd.
         This disorder is stress induced, the main causes of stress are high temperatures and lack of water.</string>
-<string name="Cabbage_Bracting_IPM_Recomm">There is a big difference in susceptibility between varieties.\n
+    <string name="Cabbage_Bracting_IPM_Recomm">There is a big difference in susceptibility between varieties.\n
 Use varieties adapted to hot and dry conditions.\n</string>
 
 
-<!-- Onion Detail Information English -->
+    <!-- Onion Detail Information English -->
 
-<!-- Pests -->
+    <!-- Pests -->
 
 
-<!-- Thrips -->
-<string name="Thrips_Title">Thrips</string>
-<string name="Thrips_SubTitle">Thrips tabaci</string>
-<string name="Thrips">Onion Thrips are small (2mm) insect pests classified under Thysanoptera: Thripidae.
+    <!-- Thrips -->
+    <string name="Thrips_Title">Thrips</string>
+    <string name="Thrips_SubTitle">Thrips tabaci</string>
+    <string name="Thrips">Onion Thrips are small (2mm) insect pests classified under Thysanoptera: Thripidae.
         Adult thrips are thin and small insect has light yellow to brown color slender insects with fringed wings.
         The larvae has similar appearance with very light color and no wings. These insects that feed on young
         leaves in the inner neck of the onion plants. In these areas, they damage the plants by rasping and
@@ -365,20 +377,20 @@ Use varieties adapted to hot and dry conditions.\n</string>
         referred to as white blast or silver top leave thin and twisted leaf. These insects is able to
         spread the Iris Yellow Spot Virus. Onion trips, Thrips tabaci, and the western flower thrips,
         Frankliniella occidentalis, are the two most important thrips in onions.</string>
-<string name="Thrips_IPM_Recommendation">Frequent Ploughing between 15 -20 days and exposing the soil to sun\n
+    <string name="Thrips_IPM_Recommendation">Frequent Ploughing between 15 -20 days and exposing the soil to sun\n
     Avoid continuous onion planting on the same field\n
     Avoid cultivation of onions adjacent to fields of green, as green serves as a host crop for the onion thrips.\n
     Do not use excessive amount of nitrogen and dress it in multiple applications during the growth season.\n
     Use appropriate pesticides to control pest.\n</string>
-<string name="Thrips_Pesticide_Recommendation">To avoid resistance, Use chemicals under different chemical group\n
+    <string name="Thrips_Pesticide_Recommendation">To avoid resistance, Use chemicals under different chemical group\n
     ACTELIC 50% 500ml per 400 - 600Lt of water per Ha\n
     RADIANT / TRACER 200ml per 400 - 600Lt of water per Ha\n
     Additionally applying NEMBICIDINE EC, LAMDEX/ CARATE 5 EC, DECIS 2.5 SC, CONFIDOR SL/
         CONFIDENCE 350 SC will help to control the pest better.\n</string>
 
-<!-- Leaf Miner-->
-<string name="Leaf_Miner_Title">Leaf Miner</string>
-<string name="Leaf_Miner">Liriomyza huidobrensis, commonly known as the pea leaf miner, is a species
+    <!-- Leaf Miner-->
+    <string name="Leaf_Miner_Title">Leaf Miner</string>
+    <string name="Leaf_Miner">Liriomyza huidobrensis, commonly known as the pea leaf miner, is a species
         of insect, a fly categorized under the order Diptera in the family Agromyzidae. The larvae of
         this fly mine the leaves and stems of peas and a range of other vegetables. On the leaves
         light-green to whitish meandering tunnels appear. These are caused by the larvae of small
@@ -386,61 +398,61 @@ Use varieties adapted to hot and dry conditions.\n</string>
         and kill young plants. The maggot has a pale color and will only be found in the leaf mines.
         When fully grown it colors pale green or yellow. The pupa is black and can be seen in the tunnel.
         Flies are yellow and black colored.</string>
-<string name="Leaf_Miner_IPM_Recommendation">To break the life cycle of the pest, removing crop residue by burring or burning is important\n
+    <string name="Leaf_Miner_IPM_Recommendation">To break the life cycle of the pest, removing crop residue by burring or burning is important\n
     Clearing of volunteer crops (incl. weeds) that serve as a host to the leaf miner.\n
     Avoid continuous onion planting on the same field\n
     Use appropriate pesticides to control pest.\n</string>
-<string name="Leaf_Miner_Pesticide_Recommendation">To avoid resistance, Use chemicals under different chemical group\n
+    <string name="Leaf_Miner_Pesticide_Recommendation">To avoid resistance, Use chemicals under different chemical group\n
     ACTELIC 50% 500ml per 400 - 600Lt of water per Ha\n
     RADIANT / TRACER 200ml per 400 - 600Lt of water per Ha\n
     Additionally applying NEMBICIDINE EC, LAMDEX/ CARATE 5 EC, DECIS 2.5 SC, CONFIDOR SL/ CONFIDENCE 350 SC will help to control the pest better.\n
     </string>
 
 
-<!-- Disease-->
-<!-- Pink Root-->
-<string name="Pink_Root_Title">Pink Root</string>
-<string name="Pink_Root">Pink root of onion (Allium cepa) is caused by the soil borne pathogen
+    <!-- Disease-->
+    <!-- Pink Root-->
+    <string name="Pink_Root_Title">Pink Root</string>
+    <string name="Pink_Root">Pink root of onion (Allium cepa) is caused by the soil borne pathogen
         Phoma terrestris.  High temperatures cause ideal circumstances for the development of Pink
         root in the soil. The fungus appears as a discoloration of the roots, which will color from
         light ping to yellow brown. Finally, roots will shrivel, become brittle and die. Optimal
         temperature for development: 25°C-28°C. </string>
-<string name="Pink_Root_IPM_Recommendation">Use varieties with resistance to Pink root.\n
+    <string name="Pink_Root_IPM_Recommendation">Use varieties with resistance to Pink root.\n
         Solarization has proven effective in many areas.\n
         Crop rotation with non-host\n
         crops will decrease the chance of infection.\n
         It is common that is remains in the soil for >5 years.\n</string>
-<string name="Pink_Root_Pesticide_Recommendation">CHLOROPICRIN (various products) has
+    <string name="Pink_Root_Pesticide_Recommendation">CHLOROPICRIN (various products) has
         been used as a soil fumigant since 1920. The primary use today is for preplant soil fumigation
         to control soil borne fungi, diseases and nematodes. Eg. Pink root\n</string>
 
-<!-- White Rot-->
-<string name="White_rot_Title">White rot</string>
-<string name="White_rot">White rot is caused by the soil-borne fungus Sclerotium cepivorum. It
+    <!-- White Rot-->
+    <string name="White_rot_Title">White rot</string>
+    <string name="White_rot">White rot is caused by the soil-borne fungus Sclerotium cepivorum. It
         can infect all plants in the Allium family (including leeks and chives,) but garlic and
         onions are the most susceptible. The symptoms of white rot are yellow leaves and limited or
         no development of the canopy. Infected bulbs show white, thick and fluffy spots on the basal
         plate. The origin of this fungus are dark colored sclerotia, which can remain in the soil
         for a long period of time and often spread around by tillage of the soil. Optimum
         temperature for development: 15°C-20°C</string>
-<string name="White_rot_IPM_Recommendation">Prevent spreading of the spores by avoiding
+    <string name="White_rot_IPM_Recommendation">Prevent spreading of the spores by avoiding
         spreading of infected soil (clean machinery).\n
         Make sure non-infected plant material (sets or transplants).\n
         If possible, prevent the spread of irrigation water between healthy and infected fields. \n
     	Remove and destroy infected plants from the field.\n
     	Remove crop residues from the field and maintain a (very) wide crop rotation.\n
     	Register the location of the infected fields and follow-up.\n</string>
-<string name="White_Root_Pesticide_Recommendation">Three fungicides are commonly used for white rot control: tebuconazole, fludioxonil and boscalid.\n
+    <string name="White_Root_Pesticide_Recommendation">Three fungicides are commonly used for white rot control: tebuconazole, fludioxonil and boscalid.\n
     Regardless of which fungicide is used, they need to be applied in a 10 – 15 cm bandwidth, at planting, and in the seed furrow.\n
     Later fungicide applications are ineffective in controlling disease.\n
     Please note that tebuconazole is phytotoxic on onions if it is applied at a higher concentration than the recommended 1.5 liters per hectare.\n
     Phytotoxicity can also occur if the bandwidth is narrowed, even at the recommended rate per hectare.\n</string>
 
 
-<!-- Downy mildew-->
+    <!-- Downy mildew-->
 
-<string name="Downly_Mildew_Title">Downy mildew</string>
-<string name="Downny_Mildew">Peronospora destructor is a plant pathogen. It causes downy mildew on
+    <string name="Downly_Mildew_Title">Downy mildew</string>
+    <string name="Downny_Mildew">Peronospora destructor is a plant pathogen. It causes downy mildew on
         leaves of cultivated and wild Allium. Allium cepa (onion and shallot) is most often affected,
         while Allium schoenoprasum (chives) and Allium porrum (leek) are only occasionally affected.
         Symptoms are mostly visible from the middle to the top of foliage, where light greenish to
@@ -448,14 +460,14 @@ Use varieties adapted to hot and dry conditions.\n</string>
         growth is first symptom. Finally, the leaf will fall down after the leaf changes its color gradually.
         High humidity combined with high temperatures will lead to a fast development and spread of the fungus.
         Optimal temperature for infection and development is 13°C and 22°C respectively.</string>
-<string name="Downy_Mildew_IPM_Recommendation">Choose a variety with high resistance level.\n
+    <string name="Downy_Mildew_IPM_Recommendation">Choose a variety with high resistance level.\n
     Treat the seed with fungicide before seeding.\n
     Start cultivation with plants that are not infected with (set or transplants).\n
     Allow proper air circulation and reduce duration of leaf wetness.\n
     Remove crop residues from the field as they can lead to outbreaks.\n
     Maintain a crop rotation of minimal 5 years.\n
     If possible, apply an accurate and preventive spray management to control.\n</string>
-<string name="Downy_Mildew_Pesticide_Recommendation">Field monitoring and adequate diagnosis of diseases symptoms.\n
+    <string name="Downy_Mildew_Pesticide_Recommendation">Field monitoring and adequate diagnosis of diseases symptoms.\n
     Spray at the first sign of the disease to control the disease.\n
     Apply RIDOMIL GOLD anti fungus 1.5-2 Kg per 600Lt of water per Ha\n
     Apply MANCOZEB anti fungus 1.5-2 Kg per 600Lt of water per Ha\n
@@ -464,10 +476,10 @@ Use varieties adapted to hot and dry conditions.\n</string>
     Depending on the temperature and humidity, repeat fungicide application every 7 - 14 days until harvesting.\n</string>
 
 
-<!-- Purple Blotch-->
+    <!-- Purple Blotch-->
 
-<string name="Purple_Blotch_Title">Purple Blotch</string>
-<string name="Purple_Blotch">Purple blotch is caused by the fungus Alternaria porri. It can infect
+    <string name="Purple_Blotch_Title">Purple Blotch</string>
+    <string name="Purple_Blotch">Purple blotch is caused by the fungus Alternaria porri. It can infect
         all above ground parts of the plant in addition to the bulb. Seed borne pathogen transmits the disease.
         The leaves are showing small, water-soaked lesions with white centers. During further development of
         the fungus the lesions become bigger and ring with traces develop. The edges of the lesion color
@@ -476,14 +488,14 @@ Use varieties adapted to hot and dry conditions.\n</string>
         humidity at night and long periods of wet leaves during the day are beneficial for the fungus.
         6\u00B0C to 34\u00B0C is optimal temperature for development of the fungus. This disease has similar
         symptoms as that of downy mildew. The preventive and controlling methods are similar.</string>
-<string name="Purple_Blotch_IPM_Recommendation">Choose a variety with high resistance level.\n
+    <string name="Purple_Blotch_IPM_Recommendation">Choose a variety with high resistance level.\n
     Treat the seed with fungicide before seeding.\n
     Start cultivation with plants that are not infected with (set or transplants).\n
     Allow proper air circulation and reduce duration of leaf wetness.\n
     Remove crop residues from the field as they can lead to outbreaks.\n
     Maintain a crop rotation of minimal 5 years.\n
     If possible, apply an accurate and preventive spray management to control.\n</string>
-<string name="Purple_Blotch_Pesticide_Recommendation">Field monitoring and adequate diagnosis of diseases symptoms.\n
+    <string name="Purple_Blotch_Pesticide_Recommendation">Field monitoring and adequate diagnosis of diseases symptoms.\n
     Spray at the first sign of the disease to control the disease.\n
     Apply RIDOMIL GOLD anti fungus 1.5-2 Kg per 600Lt of water per Ha\n
     Apply MANCOZEB anti fungus 1.5-2 Kg per 600Lt of water per Ha\n
@@ -491,15 +503,15 @@ Use varieties adapted to hot and dry conditions.\n</string>
         and NATIVE 300 SC will help to control the disease better.
     Depending on the temperature and humidity, repeat fungicide application every 7 - 14 days until it reaches harvesting.\n</string>
 
-<!-- Onion Bacterial soft rot-->
-<string name="Onion_Bacterial_Soft_Rot_Title">Onion Bacterial Soft Rot</string>
-<string name="Onion_Bacterial_Soft_Rot">Erwinia carotovora bacteria commonly cause onion Bacterial
+    <!-- Onion Bacterial soft rot-->
+    <string name="Onion_Bacterial_Soft_Rot_Title">Onion Bacterial Soft Rot</string>
+    <string name="Onion_Bacterial_Soft_Rot">Erwinia carotovora bacteria commonly cause onion Bacterial
         Soft Rot. The bacteria infects through damages on the canopy, which may be the effect of hail,
         insects or fungi. Onion plants can be infected on the field. The rotting process starts in the
         center of the bulb, the structure of the onion breaks down. A yellow to brown slimy fluid can
         expose when pressure is applied to the base of the onion bulb. Infected bulbs have a foul-smelling
         odor. Most of the time, this disease can happen if the onion is stored without proper drying.</string>
-<string name="Onion_Bacterial_Soft_Rot_IPM_Recommendation">Select fields with a good structure and water management prior to onion cultivation.\n
+    <string name="Onion_Bacterial_Soft_Rot_IPM_Recommendation">Select fields with a good structure and water management prior to onion cultivation.\n
     Use non-contaminated plant material.\n
     Avoid excessive use of nitrogen fertilizer.\n
     It can be possible to “roll the tops” mechanically to avoid improperly dried necks after storm or hail damages.\n
@@ -510,37 +522,37 @@ Use varieties adapted to hot and dry conditions.\n</string>
     It is good to properly dry the produce and avoid moisture during storage\n
     During storage, leave enough space for air circulation and ventilation to reduce moisture\n
     Avoid mechanical damage during harvest, selection, packaging, transportation and storage.\n</string>
-<string name="Onion_Bacterial_Soft_Rot_Pesticide_Recommendation">Copper bactericides provide bacterial control when applied before disease is observed.\n
+    <string name="Onion_Bacterial_Soft_Rot_Pesticide_Recommendation">Copper bactericides provide bacterial control when applied before disease is observed.\n
     Depending on weather conditions, Sprays should be initiated two weeks before bulb initiation, and continued on a 5 to 10 days spray interval.\n
     Apply in a sufficient volume of water to ensure thorough coverage. Include a low rate of a non-ionic surfactant to further improve coverage.\n
     Sometimes, Copper tolerant strains of the pathogens are common. For this, Tank mixing copper bactericides (eg. Maneb) is essential for effective disease suppression.\n
     Tank-mixing coppers with zinc or iron can also enhance their activity.\n</string>
-<!--<string name="title_activity_home_page__land_scape_">HomePage_LandScape_Activity</string>-->
+    <!--<string name="title_activity_home_page__land_scape_">HomePage_LandScape_Activity</string>-->
 
-<!-- Disorder-->
-<!-- Bolting-->
-<string name="Onion_Bolting_Title">Bolting</string>
-<string name="Onion_Bolting">The plant will start to reproduce and will form a flower head.
+    <!-- Disorder-->
+    <!-- Bolting-->
+    <string name="Onion_Bolting_Title">Bolting</string>
+    <string name="Onion_Bolting">The plant will start to reproduce and will form a flower head.
             This symptom is mostly caused by temperature changes (relative low temperatures) or other
             stress issues (e.g. damage). Bolters can rot away in storage. The onion plant is most
             sensitive to bolting when it has 2-3 real leaves and temperatures are low.</string>
-<string name="Onion_Bolting_IPM_Recommendation">Make us of varieties that are more tolerant to bolting.\n
+    <string name="Onion_Bolting_IPM_Recommendation">Make us of varieties that are more tolerant to bolting.\n
             Avoid areas with cool climates at the start of the season.\n
             Certain temperature is needed to get bulb induction instead of bolting (depending on the area).\n</string>
 
-<!-- Splitting, Cracking and Doubling-->
-<string name="Onion_Splitting_Cracking_Title">Splitting, Cracking and Doubling</string>
-<string name="Onion_Splitting_Cracking">These three disorders are mostly caused by stress.
+    <!-- Splitting, Cracking and Doubling-->
+    <string name="Onion_Splitting_Cracking_Title">Splitting, Cracking and Doubling</string>
+    <string name="Onion_Splitting_Cracking">These three disorders are mostly caused by stress.
             The stress can be the outcome of excessive use of irrigation of fertilizers.
             Cracking will also appear when the onion experiences a growth stagnation followed by a
             growth explosion. This is for example visible after a long dry start followed by a long
             period of heavy rainfall.</string>
-<string name="Onion_Spliting_Cracking_IPM_Recommendation">To avoid this choice, Plant seed that is known to be free of genetic abnormalities.\n
+    <string name="Onion_Spliting_Cracking_IPM_Recommendation">To avoid this choice, Plant seed that is known to be free of genetic abnormalities.\n
             Apply the appropriate dosage of irrigation, fertilization and chemicals in order to avoid stress.\n
             A good soil structure will be beneficial for a uniform growth of the crop and will avoid stress conditions.\n</string>
-<!-- Chimera-->
-<string name="Onion_Chimera_Title">Chimera</string>
-<string name="Onion_Chimera">This is a genetic abnormality and its expression and occurrence is
+    <!-- Chimera-->
+    <string name="Onion_Chimera_Title">Chimera</string>
+    <string name="Onion_Chimera">This is a genetic abnormality and its expression and occurrence is
         unaffected by environmental conditions. This condition generally occurs on only a small percentage
         of the plants in a field. The leaves of the onion are partly covered with yellow or light green
         stripes. This stripe is not covering the whole leaf in the width, but in the length. Variegated
@@ -548,16 +560,16 @@ Use varieties adapted to hot and dry conditions.\n</string>
         a normal green color being directly adjacent to tissues that are varying shades of yellow to white
         in color. Expression of chimera can be confused with a virus, but a chimera occurs in many cases
         in an individual plant.</string>
-<string name="Onion_Chimera_Recommendation">To avoid this disorder, Plant seed that is known to be free of genetic abnormalities.\n</string>
+    <string name="Onion_Chimera_Recommendation">To avoid this disorder, Plant seed that is known to be free of genetic abnormalities.\n</string>
 
 
-<!-- Pepper -->
+    <!-- Pepper -->
 
-<!-- Pests-->
+    <!-- Pests-->
 
-<!-- Boll Worm-->
-<string name="Pepper_Bollworm_Title">Boll Worm</string>
-<string name="Pepper_Bollworm">African boll worm is a species of moth in the Lepidoptera order of
+    <!-- Boll Worm-->
+    <string name="Pepper_Bollworm_Title">Boll Worm</string>
+    <string name="Pepper_Bollworm">African boll worm is a species of moth in the Lepidoptera order of
         the family Noctuidae. It is a major pest in cotton and one of the most polyphagous and cosmopolitan
         pest species. African boll worm caterpillar is initially pale green, sometimes with black dots,
         and a pattern of thin dark lines running along the body, the lines being darker around the second
@@ -569,16 +581,16 @@ Use varieties adapted to hot and dry conditions.\n</string>
         are placed away from damaged plant parts. The holes serve as entry points for secondary infection
         by diseases causing fruit decay. One caterpillar can damage several fruits/pods. Once they burrow
         into the fruits/pods they are difficult to reach and to control with insecticides.</string>
-<string name="Pepper_Bollworm_IPM_Recomm">Adequate identification/monitoring of different life stages and damage symptoms\n
+    <string name="Pepper_Bollworm_IPM_Recomm">Adequate identification/monitoring of different life stages and damage symptoms\n
 Monitoring (field inspection, use of pheromone traps, etc), use a trap crop (e.g. African marigold) planted every 8 rows\n
 Remove and destroy infected fruit and infested plants after harvest (burn or make compost)\n
 Plough soil after harvesting to expose pupae to sunlight and natural enemies.\n
 Allow natural enemies to flourish and Conserve natural enemies (Trichogramma pertiosum or T. achaeae, Macrolophus pygmaeus)\n
 </string>
 
-<!-- Vegetable leaf miner-->
-<string name="Pepper_Vegetable_Leaf_Miner_Title">Vegetable Leaf Miner</string>
-<string name="Pepper_Vegetable_Leaf_Miner">Liriomyza huidobrensis, commonly known as the pea leaf
+    <!-- Vegetable leaf miner-->
+    <string name="Pepper_Vegetable_Leaf_Miner_Title">Vegetable Leaf Miner</string>
+    <string name="Pepper_Vegetable_Leaf_Miner">Liriomyza huidobrensis, commonly known as the pea leaf
         miner, is a species of insect, a fly categorized under the order Diptera in the family Agromyzidae.
         The larvae of this fly mine the leaves and stems of peas and a range of other vegetables. On the
         leaves light-green to whitish meandering tunnels appear. These are caused by the larvae of small
@@ -586,29 +598,29 @@ Allow natural enemies to flourish and Conserve natural enemies (Trichogramma per
         young plants. The maggot has a pale color and will only be found in the leaf mines. When fully
         grown it colors pale green or yellow. The pupa is black and can be seen in the tunnel. Flies are
         yellow and black colored.</string>
-<string name="Pepper_Vegetable_Leaf_Miner_IPM_Recomm">To break the life cycle of the pest, removing crop residue by burring or burning is important\n
+    <string name="Pepper_Vegetable_Leaf_Miner_IPM_Recomm">To break the life cycle of the pest, removing crop residue by burring or burning is important\n
 Clearing of volunteer crops (incl. weeds) that serve as a host to the leaf miner.\n
 Avoid continuous onion planting on the same field\n
 Use appropriate pesticides to control pest.\n
 </string>
 
-<!-- Aphids-->
-<string name="Pepper_Aphids_Title">Aphids</string>
-<string name="Pepper_Aphids">Aphids are small sap-sucking insects and members of the superfamily
+    <!-- Aphids-->
+    <string name="Pepper_Aphids_Title">Aphids</string>
+    <string name="Pepper_Aphids">Aphids are small sap-sucking insects and members of the superfamily
         Aphidoidea. Common names include greenfly and blackfly, although individuals within a species
         can vary widely in colour. They are soft bodied, bear shaped insects with a pair of dark cornicles
         and a cauda protruding from the pair of dark cornicles and a cauda protruding from the abdomen.
         They may be winged or wingless. The wingless form is most common. Aphids feed in colonies,
         causing discoloration or mottling of the foliage. They excrete honeydew on which sooty mold
         grows: Nymphs molt by shedding skin a few times before becoming an adult.</string>
-<string name="Pepper_Aphids_IPM_Recomm">If infestation is minimal, use physical method and remove infected parts of the plants.\n
+    <string name="Pepper_Aphids_IPM_Recomm">If infestation is minimal, use physical method and remove infected parts of the plants.\n
 Biological control may be used by promoting natural enemies by applying selected pesticide\n
 Use selected pesticide, please consult your local specialist.\n
 </string>
 
-<!--White fly-->
-<string name="Pepper_White_fly_Title">White fly</string>
-<string name="Pepper_White_fly">Whiteflies Bemisia tabaci are small Hemipterans that typically feed
+    <!--White fly-->
+    <string name="Pepper_White_fly_Title">White fly</string>
+    <string name="Pepper_White_fly">Whiteflies Bemisia tabaci are small Hemipterans that typically feed
         on the undersides of plant leaves. Bemisia tabaci, the only vector of Tomato yellow leaf curl
         virus (TYLCV), has a very wide host range and is difficult to manage with insecticides. Bemisia tabaci
         is a serious pest in many vegetables including cucurbits, capsicums, capsicums, tomato, eggplant, brassicas
@@ -623,7 +635,7 @@ Use selected pesticide, please consult your local specialist.\n
         for life. Whiteflies are efficient vectors of TYLCV transmitting the virus following a single 15 to
         30 minutes feeding period. The insect pest will Secret honeydew encourages black sooty mold growth.
         Interferes with the photosynthesis and reduce vigorousity of plant and gradually will die.</string>
-<string name="Pepper_White_fly_IPM_Recomm">The use of registered insecticides to control whiteflies is also an important tool in reducing the spread of TYLCV.\n
+    <string name="Pepper_White_fly_IPM_Recomm">The use of registered insecticides to control whiteflies is also an important tool in reducing the spread of TYLCV.\n
 However, this should not be the sole basis of TYLCV control as whiteflies have the ability to quickly develop resistance to insecticides.\n
 Repetitive and frequent use of insecticides to control whiteflies may result in outbreaks of secondary pest such as tow spotted mite and leafminers.\n
 A number of insecticides are effective against whitefly but it is important to understand the mode of action for each chemical so that it can be applied correctly.\n
@@ -632,9 +644,9 @@ Check crops for whitefly regularly using a scouting method. Walking through a cr
 Don’t continue to spray an insecticide if it is obviously not working as this leads to resistance.\n
 Rotation of chemical mode of action groups is very important to prevent resistance from developing. Please also consult with your local specialist.\n</string>
 
-<!--Thrips -->
-<string name="Pepper_Thrips_Title">Thrips</string>
-<string name="Pepper_Thrips">The onion thrips, Thrips tabaci, are very small, from 0.5 to 1.2 mm
+    <!--Thrips -->
+    <string name="Pepper_Thrips_Title">Thrips</string>
+    <string name="Pepper_Thrips">The onion thrips, Thrips tabaci, are very small, from 0.5 to 1.2 mm
         at the immature stage to 2 mm at the immature stage to 2 mm for the adults is classified under
         Thysanoptera: Thripidae. The form of the thrips body is elongated, elliptical and slender. The
         eyes have a darker coloration and are easy to see. Immature thrips range from white to pale
@@ -648,7 +660,7 @@ Rotation of chemical mode of action groups is very important to prevent resistan
         of virus. The onion thrips (Thrips tabaci) and Western flower thrips (Frankliniella occidentalis)
         are the main thrips types attacking vegetables.
 </string>
-<string name="Pepper_Thrips_IPM_Recomm">The most effective management strategies rely on exclusion of infected plants and vector thrips.\n
+    <string name="Pepper_Thrips_IPM_Recomm">The most effective management strategies rely on exclusion of infected plants and vector thrips.\n
 Blue or yellow sticky cards are attractive to thrips, and are useful for monitoring populations.\n
 Removal of infected (or suspected plants is crucial, as is control of weeds that may harbor the virus or thrips.\n
 Reflective mulches have been demonstrated to reduce spread of TSWV in some systems (they are thought to cause confusion in thrips).\n
@@ -658,23 +670,23 @@ Many thrips biotypes exist with resistance to one or more insecticides, rotation
 Please consult your local supplier.\n
 </string>
 
-<!--Cutworm-->
-<string name="Pepper_Cutworm_Title">Cutworm</string>
-<string name="Pepper_Cutworm">Cutworm, Peridroma saucia, the pearly underwing or variegated cutworm,
+    <!--Cutworm-->
+    <string name="Pepper_Cutworm_Title">Cutworm</string>
+    <string name="Pepper_Cutworm">Cutworm, Peridroma saucia, the pearly underwing or variegated cutworm,
         is a species of moth of the family Noctuidae. Fat, basically gray, brown, or black caterpillar
         that is 40 to 50 mm long when full grown. It has 3 pairs of legs near the head and 5 pairs of
         fleshy prologs. Cutworms are active at night, young caterpillars climb on leaves, and the older
         caterpillar severs seedling stems near the ground. Cutworms hide during the day in soil burrows
         at the bases of plants.</string>
-<string name="Pepper_Cutworm_IPM_Recomm">Destroy plat residues by tilling before plantation, especially when tomatoes follow a good host crop for cutworms (e.g. alfalfa or beans and cover crops that include legumes).\n
+    <string name="Pepper_Cutworm_IPM_Recomm">Destroy plat residues by tilling before plantation, especially when tomatoes follow a good host crop for cutworms (e.g. alfalfa or beans and cover crops that include legumes).\n
 Manage weeds surrounding the field before planting.\n
 Kill and till under or remove weeds, as cutworms will shelter in living and dead weeds.\n
 If pupae are overwintering, only getting rid of host plants may not prevent damage.\n
 During the season monitor the ground to detect damage.\n</string>
 
-<!--Broad mite-->
-<string name="Pepper_Broad_mite_Title">Broad Mite</string>
-<string name="Pepper_Broad_mite">Broad Mite, Polyphagotarsonemus latus Mites are nearly impossible
+    <!--Broad mite-->
+    <string name="Pepper_Broad_mite_Title">Broad Mite</string>
+    <string name="Pepper_Broad_mite">Broad Mite, Polyphagotarsonemus latus Mites are nearly impossible
         to see without a hand lens. Females are nearly 0.2mm in length while males are 0.1mm long.
         Their eight-legged bodies are swollen ovals that can be amber, yellow, or green. The hind most
         legs in females are much reduced while enlarged in males. Eggs are colorless ellipses with tiny
@@ -687,17 +699,17 @@ During the season monitor the ground to detect damage.\n</string>
         broad mite saliva.\n\nBroad mites are pests on many fruit, vegetable, and ornamental crops
         throughout the tropics. Like other pests they can also be found in greenhouses at temperate
         regions. Some hosts are pepper, citrus, avocado, guava, and cotton.</string>
-<string name="Pepper_Broad_mite_IPM_Recomm">Regularly inspect plants and disinfest of infested plants.\n
+    <string name="Pepper_Broad_mite_IPM_Recomm">Regularly inspect plants and disinfest of infested plants.\n
 Establish new plantings from mite-free stock and never plant new plants near infested ones.\n
 Predatory mites and six spotted thrips may help limit populations.\n
 Met 52: Metarhizium anisopliae Strain F52. Growers in California have found Met52 to be an effective biological control for broad mites. The label rate is 560 - 4483 ml/Ha with a 0-day PHI\n
 </string>
 
 
-<!--Disease-->
-<!--Bacterial Leaf Spot-->
-<string name="Pepper_Bacterial_Leaf_Spot_Title">Bacterial Leaf Spot</string>
-<string name="Pepper_Bacterial_Leaf_Spot">Bacterial spot is caused by the Bacterium xanthomonas
+    <!--Disease-->
+    <!--Bacterial Leaf Spot-->
+    <string name="Pepper_Bacterial_Leaf_Spot_Title">Bacterial Leaf Spot</string>
+    <string name="Pepper_Bacterial_Leaf_Spot">Bacterial spot is caused by the Bacterium xanthomonas
         campestris pv. Vesicatoria. Bacterial spot is one of the most dangerous tomato diseases in
         existence, since it spreads rapidly and is very difficult to control. It infects both tomato
         and pepper. Spots that appear on leaves and stems are small (0.30 cm across), circular to irregular
@@ -711,7 +723,7 @@ Met 52: Metarhizium anisopliae Strain F52. Growers in California have found Met5
         the surface of seeds, in infected debris, and in soil. It is commonly brought into fields on
         infected transplants. Warm rainy weather favors rapid spread of bacterial spot.
 </string>
-<string name="Pepper_Bacterial_Leaf_Spot_IPM_Recomm">To control bacterial spot, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:
+    <string name="Pepper_Bacterial_Leaf_Spot_IPM_Recomm">To control bacterial spot, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:
 A combination of cultural practices is often needed to control bacterial spot and many other diseases.\n
 Plant disease free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly by good ventilation.\n
 Water at the base of the plants, and in the morning rather than the evening, to minimize the amount of time that the leaves are wet.\n
@@ -724,9 +736,9 @@ Fungicides also can help to control this disease.\n
 A fixed copper product can help control spread of bacterial speck if applications begin when the first symptoms appear.\n
 </string>
 
-<!--Fusarium stem and root rot-->
-<string name="Pepper_Fusarium_stem_and_root_rot_Title">Fusarium stem and root rot</string>
-<string name="Pepper_Fusarium_stem_and_root_rot">Fusarium root rot is caused primarily by the
+    <!--Fusarium stem and root rot-->
+    <string name="Pepper_Fusarium_stem_and_root_rot_Title">Fusarium stem and root rot</string>
+    <string name="Pepper_Fusarium_stem_and_root_rot">Fusarium root rot is caused primarily by the
         ascomycete fungus Fusarium solani. Fusarium solani has a very broad host range, causing primarily
         root rots, stem cankers, and damping off in plant species across many plant families. Soft, dark
         brown or black cankers are formed on the stem, usually at nodes or wound sites. These may girdle
@@ -743,16 +755,16 @@ A fixed copper product can help control spread of bacterial speck if application
         the rockwool blocks, can stress the plants through oxygen depletion, resulting in a high
         incidence of crown lesions.
 </string>
-<string name="Pepper_Fusarium_stem_and_root_rot_IPM_Recomm">Do not allow rockwool blocks to dry out at the top because damaging levels of evaporated fertilizer salts may accumulate around the stem base and thus favour infection.\n
+    <string name="Pepper_Fusarium_stem_and_root_rot_IPM_Recomm">Do not allow rockwool blocks to dry out at the top because damaging levels of evaporated fertilizer salts may accumulate around the stem base and thus favour infection.\n
 Avoid dripping fertilizer solution at the stem base by positioning the dripper away from the stem base.\n
 Avoid excessively high fertilizer concentrations that contribute to salt damage.\n
 Avoid overlap of crop production since the airborne spores of Nectria haematococca could be spread from the old crop to the early seeded peppers.\n
 Seedling root dip treatment of bio control agents like Trichoderma viridae or Trichoderma harzianum during transplanting (10g/1litre of water)\n
 </string>
 
-<!--Phytophora blight of pepper-->
-<string name="Pepper_Phytophora_blight_of_pepper_Title">Phytophora blight of pepper</string>
-<string name="Pepper_Phytophora_blight_of_pepper">Phytophthora blight of pepper is caused by the
+    <!--Phytophora blight of pepper-->
+    <string name="Pepper_Phytophora_blight_of_pepper_Title">Phytophora blight of pepper</string>
+    <string name="Pepper_Phytophora_blight_of_pepper">Phytophthora blight of pepper is caused by the
         fungus Phytophthora capsici. Phytophthora blight of peppers can attack the roots, stems, leaves,
         and fruit, depending upon which stage plants are infected. The disease is most likely to occur
         at the soil line or on the lower 30 to 45 cm of the plant where water often pools or splashes.
@@ -766,7 +778,7 @@ Seedling root dip treatment of bio control agents like Trichoderma viridae or Tr
         prone to infection. Sporangia/spores are easily dispersed by wind and rain splashes to leaves
         and stems of healthy plants. Excess soil moisture due to excess rain or irrigation, and soil
         temperature of 18°C–30°C arising from high air temperature are needed for disease development.</string>
-<string name="Pepper_Phytophora_blight_of_pepper_IPM_Recomm">Rotate away from susceptible crops for a minimum of two years, preferably four years.\n
+    <string name="Pepper_Phytophora_blight_of_pepper_IPM_Recomm">Rotate away from susceptible crops for a minimum of two years, preferably four years.\n
 Grain crops are most suitable (e.g., corn and small grains) but crucifers are also good options.\n
 Avoid poorly drained soils and low lying areas; If not create drainage ditches to ensure maximum soil-surface drainage from furrows;\n
 Avoid excessive overhead irrigation;\n
@@ -774,9 +786,9 @@ Break up hardpans and plow-pans by subsoiling to increase soil drainage;\n
 Enter infested fields last and clean equipment before moving to other fields\n
 </string>
 
-<!--Powdery mildew-->
-<string name="Pepper_Powdery_mildew_Title">Powdery Mildew</string>
-<string name="Pepper_Powdery_mildew">Powdery mildew is caused by funguses Oidium neolycopersici
+    <!--Powdery mildew-->
+    <string name="Pepper_Powdery_mildew_Title">Powdery Mildew</string>
+    <string name="Pepper_Powdery_mildew">Powdery mildew is caused by funguses Oidium neolycopersici
         or Leveillula taurica. It causes severe white powder on all aerial parts of tomato, excluding
         the fruit. Leaf symptoms of Oidiopsis taurica consist of yellow blotches or spots on the upper
         leaf surface. A white powdery growth occurs on the underside of the leaves. This fungus penetrates
@@ -796,16 +808,16 @@ Enter infested fields last and clean equipment before moving to other fields\n
         disease development occurs at 22 °C particularly after 16 or 24 hours of leaf wetness;
         symptoms can appear within 7 days from the time that the spore lands on the leaf surface.
 </string>
-<string name="Pepper_Powdery_mildew_IPM_Recomm">Avoid high rates of nitrogen, which make plants more susceptible to infection.\n
+    <string name="Pepper_Powdery_mildew_IPM_Recomm">Avoid high rates of nitrogen, which make plants more susceptible to infection.\n
 Avoid crowding and shading, which lead to the development of leaf wetness and conditions that promote infection.\n
 Avoid overhead irrigation for the same reason.\n
 Avoid planting young tomato plants while diseased plants remain nearby.\n
 Control weeds around the planting site since both fungi have a wide host range and could persist on these plants during the growing season or during the off-season.\n
 </string>
 
-<!--Root knot-->
-<string name="Pepper_Root_knot_Title">Root knot</string>
-<string name="Pepper_Root_knot">The root-knot nematode (Meloidogyne spp.) is a major plant pathogen,
+    <!--Root knot-->
+    <string name="Pepper_Root_knot_Title">Root knot</string>
+    <string name="Pepper_Root_knot">The root-knot nematode (Meloidogyne spp.) is a major plant pathogen,
         affecting several solanaceous crops worldwide. Nematode infestations damage the plant roots,
         and therefore symptoms reflect poorly functioning root systems. Above ground symptoms of severe
         root knot and stubby root nematode infestations include patches of chlorotic, stunted, necrotic,
@@ -819,7 +831,7 @@ Control weeds around the planting site since both fungi have a wide host range a
         malformed and the root system shortened and thickened. In general, lighter, sandy soils favor
         nematode infection and result in more severe damage to roots.
 </string>
-<string name="Pepper_Root_knot_IPM_Recomm">In fields infested with root knot nematodes, crop rotation may not be feasible because of their extensive host range;\n
+    <string name="Pepper_Root_knot_IPM_Recomm">In fields infested with root knot nematodes, crop rotation may not be feasible because of their extensive host range;\n
 Care is needed in the selection of rotation crops because some may be good alternate hosts.\n
 Alternation with a ”trap crop” such as Elbon cereal rye which limits nematode reproduction may be effective.\n
 It is advisable to plant resistant varieties, and many resistant varieties are available.\n
@@ -827,12 +839,12 @@ Soil solarization may help to lower the nematodes in the top layers of the soil 
 Roots are likely to become infested as the season progresses by nematodes that survived in the deeper soil layers.\n
 </string>
 
-<!-- Pepper -->
-<!-- Disorder-->
+    <!-- Pepper -->
+    <!-- Disorder-->
 
-<!-- Blossom end rot-->
-<string name="Pepper_Blossom_end_rot_Title">Blossom end rot of Pepper</string>
-<string name="Pepper_Blossom_end_rot">Blossom-end rot is caused by a calcium deficiency in the developing
+    <!-- Blossom end rot-->
+    <string name="Pepper_Blossom_end_rot_Title">Blossom end rot of Pepper</string>
+    <string name="Pepper_Blossom_end_rot">Blossom-end rot is caused by a calcium deficiency in the developing
         fruit. This problem results from low levels of calcium in the soil or from a lack of soil moisture.
         Uptake of calcium from the soil depends on adequate moisture moving into the roots. Any condition
         that reduces roots’ ability to absorb water, and hence, take up calcium, can cause blossom-end
@@ -844,16 +856,16 @@ Roots are likely to become infested as the season progresses by nematodes that s
         be mistaken for sun scald. Sun scald, however, results in a bleached, white area on the fruit.
         On bell pepper, the rot usually occurs on the tip of the lobes. Secondary fungi may cause the
         tan area to turn dark.</string>
-<string name="Pepper_Blossom_end_rot_IPM_Recomm">Applying lime or gypsum can provide calcium.\n
+    <string name="Pepper_Blossom_end_rot_IPM_Recomm">Applying lime or gypsum can provide calcium.\n
 Lime corrects both low pH and low calcium levels, while gypsum only affects calcium level.\n
 Calcium chloride sprays applied to the foliage may help prevent blossom-end rot on developing fruit.\n
 Avoid excessive rates of ammonical nitrogen fertilizer.\n
 Damage to the roots by deep cultivation should also be avoided, especially after fruit set and in dry weather\n
 </string>
 
-<!--Sunscald-->
-<string name="Pepper_Sunscald_Title">Sunscald</string>
-<string name="Pepper_Sunscald">Bell pepper is a crop that requires high temperatures for growth.
+    <!--Sunscald-->
+    <string name="Pepper_Sunscald_Title">Sunscald</string>
+    <string name="Pepper_Sunscald">Bell pepper is a crop that requires high temperatures for growth.
         The hot weather and sunny days have been very beneficial for bell peppers growth and development.
         However, the fruit is very susceptible to sunburn (sunscald) under conditions of high
         irradiance.\n\nFruit exposed to the sun become extremely hot, in contrast to fruit protected
@@ -862,7 +874,7 @@ Damage to the roots by deep cultivation should also be avoided, especially after
         fruit vulnerable to plant pathogens. Growers will likely see significant crop losses from
         sunscald in peppers. In hot and sunny days, 10 to 29 % losses observed because of sunscald.
 </string>
-<string name="Pepper_Sunscald_IPM_Recomm">Nutrient management prior to fruit set and during fruit set is critical.\n
+    <string name="Pepper_Sunscald_IPM_Recomm">Nutrient management prior to fruit set and during fruit set is critical.\n
 Plants under poor soil fertility or drought stress develop a thin canopy with most of their fruit exposed\n
 Adequate crop fertilization and irrigation help develop a thick canopy that protects fruit from direct sun.\n
 Shading is the best management option; cultivars with a thick canopy usually show low sunscald incidence.\n
@@ -871,37 +883,37 @@ Crews should try, as much as possible, to avoid exposing immature fruit during h
 </string>
 
 
-<!-- Tomato -->
+    <!-- Tomato -->
 
-<!-- Pests-->
-<!-- Vegetable leaf miner -->
+    <!-- Pests-->
+    <!-- Vegetable leaf miner -->
 
-<string name="Tomato_Vegetable_leaf_Miner_Title">Vegetable Leaf Miner</string>
-<string name="Tomato_Vegetable_leaf_Miner">Vegetable leaf miner, Liriomyza sativae is a species of insect,
+    <string name="Tomato_Vegetable_leaf_Miner_Title">Vegetable Leaf Miner</string>
+    <string name="Tomato_Vegetable_leaf_Miner">Vegetable leaf miner, Liriomyza sativae is a species of insect,
         a fly in the family Agromyzidae. The larvae of this fly mine the leaves of a range of vegetables and weeds,
         but seem to favour plants in the families Cucurbitaceae, Fabaceae and Solanaceae. Colorless to bright
         yellow maggot, up to 3mm long, with pointed head; makes serpentine mines in leaves; each mine slightly
         enlarged at one end. The adult will mine a hole for feeding and oviposition. On the leaves light-green
         to whitish meandering tunnels appear. These are caused by the larvae of small flies (leaf miners).
         When there is severe Punctures and mines, it will affect productivity and kill young plants.</string>
-<string name="Tomato_Vegetable_Leaf_Miner_IPM_Recomm">The most important aspect of leaf miner management is conserving their natural enemies, which are often killed by broad-spectrum insecticides applied for other crop pests.\n
+    <string name="Tomato_Vegetable_Leaf_Miner_IPM_Recomm">The most important aspect of leaf miner management is conserving their natural enemies, which are often killed by broad-spectrum insecticides applied for other crop pests.\n
 Reduce the risk of leaf miner outbreaks by applying insecticides for fruit pests only when monitoring shows treatment is needed and by choosing insecticides that are least likely to harm leaf miner parasites.\n</string>
 
-<!-- Aphids-->
-<string name="Tomato_Aphids_Title">Aphids</string>
-<string name="Tomato_Aphids">Aphids are small sap-sucking insects and members of the superfamily Aphidoidea.
+    <!-- Aphids-->
+    <string name="Tomato_Aphids_Title">Aphids</string>
+    <string name="Tomato_Aphids">Aphids are small sap-sucking insects and members of the superfamily Aphidoidea.
         Common names include greenfly and blackfly, although individuals within a species can vary widely in colour.
         They are soft bodied, bear shaped insects with a pair of dark cornicles and a cauda protruding from the pair
         of dark cornicles and a cauda protruding from the abdomen. They may be winged or wingless. The wingless form
         is most common. Aphids feed in colonies, causing discoloration or mottling of the foliage.
         They excrete honeydew on which sooty mold grows: Nymphs molt by shedding skin a few times before becoming an adult.</string>
-<string name="Tomato_Aphids_IPM_Recomm">If infestation is minimal, use physical method and remove infected parts of the plants.\n
+    <string name="Tomato_Aphids_IPM_Recomm">If infestation is minimal, use physical method and remove infected parts of the plants.\n
 Biological control may be used by promoting natural enemies by applying selected pesticide\n
 Use selected pesticide, please consult your local specialist.\n</string>
 
-<!-- White Fly -->
-<string name="Tomato_White_Fly_Title">White Fly</string>
-<string name="Tomato_White_Fly">Whiteflies Bemisia tabaci are small Hemipterans that typically feed on the
+    <!-- White Fly -->
+    <string name="Tomato_White_Fly_Title">White Fly</string>
+    <string name="Tomato_White_Fly">Whiteflies Bemisia tabaci are small Hemipterans that typically feed on the
         undersides of plant leaves. Bemisia tabaci, the only vector of Tomato yellow leaf curl virus (TYLCV),
         has a very wide host range and is difficult to manage with insecticides. Bemisia tabaci is a serious
         pest in many vegetables including cucurbits, capsicums, capsicums, tomato, eggplant, brassicas lettuce,
@@ -915,7 +927,7 @@ Use selected pesticide, please consult your local specialist.\n</string>
         Whiteflies are efficient vectors of TYLCV transmitting the virus following a single 15 to 30 minutes feeding period.
         The insect pest will Secret honeydew encourages black sooty mold growth. Interferes with the photosynthesis and reduce
         vigorousity of plant and gradually will die.</string>
-<string name="Tomato_White_Fly_IPM_Recomm">The use of registered insecticides to control whiteflies is also an important tool in reducing the spread of TYLCV.\n
+    <string name="Tomato_White_Fly_IPM_Recomm">The use of registered insecticides to control whiteflies is also an important tool in reducing the spread of TYLCV.\n
 However, this should not be the sole basis of TYLCV control as whiteflies have the ability to quickly develop resistance to insecticides.\n
 Repetitive and frequent use of insecticides to control whiteflies may result in outbreaks of secondary pest such as tow spotted mite and leafminers.\n
 A number of insecticides are effective against whitefly but it is important to understand the mode of action for each chemical so that it can be applied correctly.\n
@@ -924,9 +936,9 @@ Check crops for whitefly regularly using a scouting method. Walking through a cr
 Don’t continue to spray an insecticide if it is obviously not working as this leads to resistance.\n
 Rotation of chemical mode of action groups is very important to prevent resistance from developing. Please also consult with your local specialist.\n</string>
 
-<!-- Thrips -->
-<string name="Tomato_Thrips_Title">Thrips</string>
-<string name="Tomato_Thrips">The onion thrips, Thrips tabaci, are very small, from 0.5 to 1.2 mm at
+    <!-- Thrips -->
+    <string name="Tomato_Thrips_Title">Thrips</string>
+    <string name="Tomato_Thrips">The onion thrips, Thrips tabaci, are very small, from 0.5 to 1.2 mm at
         the immature stage to 2 mm at the immature stage to 2 mm for the adults is classified under
         Thysanoptera: Thripidae. The form of the thrips body is elongated, elliptical and slender.
         The eyes have a darker coloration and are easy to see. Immature thrips range from white to pale
@@ -939,7 +951,7 @@ Rotation of chemical mode of action groups is very important to prevent resistan
         Virus transmission may differ based on thrips gender, virus isolate, and source plant of virus.
         The onion thrips (Thrips tabaci) and Western flower thrips (Frankliniella occidentalis) are the
         main thrips types attacking vegetables.</string>
-<string name="Tomato_Thrips_IPM_Recomm">The most effective management strategies rely on exclusion of infected plants and vector thrips.\n
+    <string name="Tomato_Thrips_IPM_Recomm">The most effective management strategies rely on exclusion of infected plants and vector thrips.\n
 Blue or yellow sticky cards are attractive to thrips, and are useful for monitoring populations.\n
 Removal of infected (or suspected plants is crucial, as is control of weeds that may harbor the virus or thrips.\n
 Reflective mulches have been demonstrated to reduce spread of TSWV in some systems (they are thought to cause confusion in thrips).\n
@@ -948,9 +960,9 @@ Systemic insecticides often do not kill thrips fast enough to slow epidemics.\n
 Many thrips biotypes exist with resistance to one or more insecticides, rotation of chemicals is vital to management.\n
 Please consult your local supplier.\n</string>
 
-<!-- Tomato leaf miner-->
-<string name="Tomato_leaf_miner_Title">Tomato Leaf Miner</string>
-<string name="Tomato_leaf_miner">Tomato leaf miner, Tuta absluta is a micro lepidopteron moth with a
+    <!-- Tomato leaf miner-->
+    <string name="Tomato_leaf_miner_Title">Tomato Leaf Miner</string>
+    <string name="Tomato_leaf_miner">Tomato leaf miner, Tuta absluta is a micro lepidopteron moth with a
         high reproductive potential. There are about 10 – 12 generations per year. The total life cycle
         is completed within 30 – 35 days. Adults are nocturnal, hide between leaves at daytime, and are 5 – 7 mm
         long with a wingspan of 8 – 10 mm. Eggs are small cylindrical creamy white to yellow 0.35 mm long.
@@ -962,30 +974,30 @@ Please consult your local supplier.\n</string>
         considered to be a serious threat to tomato production. Each female can lay 250 – 300 eggs in her life time.
         This pest is crossing borders and devastating tomato production in both protected areas and open fields.
         The infestation of tuta absoluta was also reported on potato, aubergine and common beans.</string>
-<string name="Tomato_leaf_miner_IPM_Recomm">Tuta absoluta is a very challenging pest to control.\n
+    <string name="Tomato_leaf_miner_IPM_Recomm">Tuta absoluta is a very challenging pest to control.\n
 Effectiveness of chemical control is limited due to the insect’s nature as well as to its rapid capability to develop insecticide resistant strains.\n
 The use of biological remedies is still largely underdeveloped and not ready to combat this pest effectively and in a cost effective way.\n
 Sex pheromone traps are used as an early detection tool. Mass trapping and lure and kill application of pheromone has been found to be effective to control tuta abloluta.\n
 Various active substance can be applied in combination with bio=rational control tactics.\n
 Please consult your local supplier.\n</string>
 
-<!-- Cutworm -->
-<string name="Tomato_Cutworm_Title">Cutworm</string>
-<string name="Tomato_Cutworm">Cutworm, Peridroma saucia, the pearly underwing or variegated cutworm,
+    <!-- Cutworm -->
+    <string name="Tomato_Cutworm_Title">Cutworm</string>
+    <string name="Tomato_Cutworm">Cutworm, Peridroma saucia, the pearly underwing or variegated cutworm,
         is a species of moth of the family Noctuidae. Fat, basically gray, brown, or black caterpillar
         that is 40 to 50 mm long when full grown. It has 3 pairs of legs near the head and 5 pairs of
         fleshy prologs. Cutworms are active at night, young caterpillars climb on leaves, and the older
         caterpillar severs seedling stems near the ground. Cutworms hide during the day in soil burrows
         at the bases of plants.</string>
-<string name="Tomato_Cutworm_IPM_Recomm">Destroy plat residues by tilling before plantation, especially when tomatoes follow a good host crop for cutworms (e.g. alfalfa or beans and cover crops that include legumes).\n
+    <string name="Tomato_Cutworm_IPM_Recomm">Destroy plat residues by tilling before plantation, especially when tomatoes follow a good host crop for cutworms (e.g. alfalfa or beans and cover crops that include legumes).\n
 Manage weeds surrounding the field before planting.\n
 Kill and till under or remove weeds, as cutworms will shelter in living and dead weeds.\n
 If pupae are overwintering, only getting rid of host plants may not prevent damage.\n
 During the season monitor the ground to detect damage.\n</string>
 
-<!-- Spider mites -->
-<string name="Tomato_Spider_Mites_Title">Spider Mites</string>
-<string name="Tomato_Spider_Mites">Spider mites are members of the Acari family Tetranychidae, which
+    <!-- Spider mites -->
+    <string name="Tomato_Spider_Mites_Title">Spider Mites</string>
+    <string name="Tomato_Spider_Mites">Spider mites are members of the Acari family Tetranychidae, which
         includes about 1,200 species. They generally live on the undersides of leaves of plants, where
         they may spin protective silk webs, and they can cause damage by puncturing the plant cells to
         feed. Plants take on a bronzed appearance. Upon closer inspection, stippling can be seen on
@@ -1000,7 +1012,7 @@ During the season monitor the ground to detect damage.\n</string>
         by inserting their stylet mouthparts into individual plant cells and withdrawing cellular liquids and
         contents. Removal of chlorophyll results in the aforementioned stippling. The coalescence of dead cells
         results in the bronzed/brown appearance of leaves/plants.</string>
-<string name="Tomato_Spider_Mites_IPM_Recomm">The key to mite control is through spray coverage and timely follow-up treatments.\n\n
+    <string name="Tomato_Spider_Mites_IPM_Recomm">The key to mite control is through spray coverage and timely follow-up treatments.\n\n
 Through spray coverage
 Especially important when using oils and soaps because these two materials require direct contact with the active mite stages.\n
 Once dried, oils and soaps offer no residual control.\n
@@ -1011,9 +1023,9 @@ All eggs will have hatched and no mites will have attained adult status to depos
 Once mite populations have been eliminated, plants will produce new foliage, and regain a healthy form.\n
 </string>
 
-<!-- Bollworm -->
-<string name="Tomato_Bollworm_Title">Bollworm</string>
-<string name="Tomato_Bollworm">African bollworm is a species of moth in the Lepidoptera order of
+    <!-- Bollworm -->
+    <string name="Tomato_Bollworm_Title">Bollworm</string>
+    <string name="Tomato_Bollworm">African bollworm is a species of moth in the Lepidoptera order of
         the family Noctuidae. It is a major pest in cotton and one of the most polyphagous and cosmopolitan
         pest species. African bollworm caterpillar is initially pale green, sometimes with black dots,
         and a pattern of thin dark lines running along the body, the lines being darker around the second
@@ -1025,18 +1037,18 @@ Once mite populations have been eliminated, plants will produce new foliage, and
         parts. The holes serve as entry points for secondary infection by diseases causing fruit decay. One
         caterpillar can damage several fruits/pods. Once they burrow into the fruits/pods they are difficult
         to reach and to control with insecticides.</string>
-<string name="Tomato_Bollworm_IPM_Recomm">Adequate identification/monitoring of different life stages and damage symptoms\n
+    <string name="Tomato_Bollworm_IPM_Recomm">Adequate identification/monitoring of different life stages and damage symptoms\n
 Monitoring (field inspection, use of pheromone traps, etc), use a trap crop (e.g. African marigold) planted every 8 rows\n
 Remove and destroy infected fruit and infested plants after harvest (burn or make compost)\n
 Plough soil after harvesting to expose pupae to sunlight and natural enemies.\n
 Allow natural enemies to flourish and Conserve natural enemies (Trichogramma pertiosum or T. achaeae, Macrolophus pygmaeus)\n</string>
 
 
-<!-- Disease-->
+    <!-- Disease-->
 
-<!-- Bacterial speck-->
-<string name="Tomato_Bacterial_Speck_Title">Bacterial Speck</string>
-<string name="Tomato_Bacterial_Speck">Bacterial speck is caused by rod-shaped, bacterium Pseudomonas
+    <!-- Bacterial speck-->
+    <string name="Tomato_Bacterial_Speck_Title">Bacterial Speck</string>
+    <string name="Tomato_Bacterial_Speck">Bacterial speck is caused by rod-shaped, bacterium Pseudomonas
         syringae pv. Tomato. Bacterial speck does not affect solanaceous crops but may survive on non – host
         plants. Tiny (0.15 cm) diameter dark spots appear on leaves, surrounded by yellow halos. However,
         as with bacterial spot and bacterial canker, the fruit symptoms are most characteristic. The numerous
@@ -1046,7 +1058,7 @@ Allow natural enemies to flourish and Conserve natural enemies (Trichogramma per
         seldom reduces yields greatly, it can harm fruit quality. Cool wet conditions favor Infection.
         Epidemics often follow rainstorms that cause abrasion of leaves and splash soil onto the foliage. P. syringe pv.
         Tomato overwinters in seed, in plant debris in soil, and on many other plants.</string>
-<string name="Tomato_Bacterial_Speck_IPM_Recomm">A combination of cultural practices is often needed to control bacterial speck and many other diseases.\n
+    <string name="Tomato_Bacterial_Speck_IPM_Recomm">A combination of cultural practices is often needed to control bacterial speck and many other diseases.\n
 Plant disease free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly by good ventilation.\n
 Water at the base of the plants, and in the morning rather than the evening, to minimize the amount of time that the leaves are wet.\n
 Remove as much plant debris as possible in the fall and promptly plow under or bury the reaming residue.\n
@@ -1058,9 +1070,9 @@ Fungicides also can help to control this disease.\n
 A fixed copper product can help control spread of bacterial speck if applications begin when the first symptoms appear.\n
 </string>
 
-<!-- Bacteria spot-->
-<string name="Tomato_Bacterial_Spot_Title">Bacterial Spot</string>
-<string name="Tomato_Bacterial_Spot">Bacterial spot is caused by the Bacterium xanthomonas campestris pv. Vesicatoria.
+    <!-- Bacteria spot-->
+    <string name="Tomato_Bacterial_Spot_Title">Bacterial Spot</string>
+    <string name="Tomato_Bacterial_Spot">Bacterial spot is caused by the Bacterium xanthomonas campestris pv. Vesicatoria.
         Bacterial spot is one of the most dangerous tomato diseases in existence, since it spreads rapidly
         and is very difficult to control. It infects both tomato and pepper. Spots that appear on leaves
         and stems are small (0.30 cm across), circular to irregular in shape, and have a slightly greasy feel.
@@ -1072,7 +1084,7 @@ A fixed copper product can help control spread of bacterial speck if application
         they become gray – brown and scabby with sunken pitted centers. The bacterium overwinters on the surface of
         seeds, in infected debris, and in soil. It is commonly brought into fields on infected transplants.
         Warm rainy weather favors rapid spread of bacterial spot.</string>
-<string name="Tomato_Bacterial_Spot_IPM_Recomm">To control bacterial spot, a combination of cultural
+    <string name="Tomato_Bacterial_Spot_IPM_Recomm">To control bacterial spot, a combination of cultural
         practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:
 A combination of cultural practices is often needed to control bacterial spot and many other diseases.\n
 Plant disease free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly by good ventilation.\n
@@ -1086,9 +1098,9 @@ Fungicides also can help to control this disease.\n
 A fixed copper product can help control spread of bacterial speck if applications begin when the first symptoms appear.\n
 </string>
 
-<!--Bacterial wilt-->
-<string name="Tomato_Bacterial_Wilt_Title">Bacterial Wilt</string>
-<string name="Tomato_Bacterial_Wilt">Bacterial Wilt is caused by the pathogen bacterium Ralstonia
+    <!--Bacterial wilt-->
+    <string name="Tomato_Bacterial_Wilt_Title">Bacterial Wilt</string>
+    <string name="Tomato_Bacterial_Wilt">Bacterial Wilt is caused by the pathogen bacterium Ralstonia
         solanacearum and is quite common in the moist soils. This bacterium lives in the soil and will
         work its way quickly through the roots and up the stem of the plants. Mature, fruit-bearing
         plants are affected in mid-summer. The first symptom is wilting of a few leaves. This often
@@ -1105,7 +1117,7 @@ A fixed copper product can help control spread of bacterial speck if application
         Several other factors that may affect pathogen survival in soil and water may also favours disease
         development, including soil type and structure, soil moisture content, organic matter in soil, water
         pH and salt content, and the presence of antagonist microorganisms. </string>
-<string name="Tomato_Bacterial_Wilt_IPM_Recomm">Before plantation:
+    <string name="Tomato_Bacterial_Wilt_IPM_Recomm">Before plantation:
 Consider an effective weed control in and around tomato fields and aquatic weed control around irrigation ponds.\n
 Apply 3-4 years rotation and cover crops for infested fields to reduce R. solanacearum, weeds and nematodes.\n
 Do not irrigate rotation and cover crops with R. solanacearum contaminated pond or surface water, avoid infestation.\n
@@ -1122,9 +1134,9 @@ Irrigate based on water need, avoid over irrigation.\n
 Apply plant resistance inducer, such as Actigard (Syngenta) if you are using moderately resistant cultivars.\n
 Actigard enhances resistance against this disease if it is used in combination with moderately resistant cultivars.\n</string>
 
-<!--Black root rot-->
-<string name="Tomato_Black_Root_Rot_Title">Black Root Rot</string>
-<string name="Tomato_Black_Root_Rot">Black root rot is caused by plant-pathogenic fungus Thielaviopsis basicola.
+    <!--Black root rot-->
+    <string name="Tomato_Black_Root_Rot_Title">Black Root Rot</string>
+    <string name="Tomato_Black_Root_Rot">Black root rot is caused by plant-pathogenic fungus Thielaviopsis basicola.
         It is a soil-borne fungus that causes black root rot. It has a wide host range. Symptoms of black root rot
         are typical of many other root rots or root problems. Some of these symptoms may include yellowing of the
         plant, defoliation, stunting or wilting, as well as red brown lenticels and swelling of the crown.
@@ -1139,14 +1151,14 @@ Actigard enhances resistance against this disease if it is used in combination w
         between 5 and 8.5 with a soil temperature between 12 and 21°C. Saturated soil can also increase disease, as well as
         increase the overall stress on the plant. The fungus can spread from infected roots to healthy roots if they come
         into contact. Spores can also be splashed from pot to pot when watering.</string>
-<string name="Tomato_Black_Root_Rot_IPM_Recomm">Stress or adverse growing conditions can also increase the likelihood of disease development, and include factors such as saturated soils, salt build up, and adverse temperatures.\n
+    <string name="Tomato_Black_Root_Rot_IPM_Recomm">Stress or adverse growing conditions can also increase the likelihood of disease development, and include factors such as saturated soils, salt build up, and adverse temperatures.\n
 Another environmental factor is soil pH. Maintaining a soil pH below 5.6 has been shown to decrease severity of symptoms.\n
 Several fungicides have proven effective, but may be most effective when used preventatively or at first sign of disease.\n
 Fungicides cannot compensate for poor sanitation or environmental controls.\n</string>
 
-<!--Early blight (Alternaria leaf spot)-->
-<string name="Tomato_Early_Blight_Title">Early Blight (Alternaria leaf spot)</string>
-<string name="Tomato_Early_Blight">Early blight is a fungal disease, caused by the Alternaria sp. Alternaria
+    <!--Early blight (Alternaria leaf spot)-->
+    <string name="Tomato_Early_Blight_Title">Early Blight (Alternaria leaf spot)</string>
+    <string name="Tomato_Early_Blight">Early blight is a fungal disease, caused by the Alternaria sp. Alternaria
         solani. Like septoria leaf spot, early blight is common in open field and the two diseases may attack
         the same plants. Premature loss of lower leaves is the most obvious symptom of the disease. Brown to
         black spots, 0.6 to 1.3 cm in diameter with dark edges, appear on lower leaves. Spots frequently merge,
@@ -1156,7 +1168,7 @@ Fungicides cannot compensate for poor sanitation or environmental controls.\n</s
         and a black, velvety appearance. Warm, wet weather favors rapid spread of early blight. A. solani also can
         infect potato. Early blight can infect plants at any stage during the growing season but usually progresses
         most rapidly after plants have set fruit.</string>
-<string name="Tomato_Early_Blight_IPM_Recomm">To control early blight, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:\n
+    <string name="Tomato_Early_Blight_IPM_Recomm">To control early blight, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:\n
 Plant disease – free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly.\n
 Water at the base of the plants, and in the morning rather than the evening, to minimize the amount of time that the leaves are wet.\n
 Remove as much plant debris as possible in the fall and promptly plow under or bury the reaming residue.\n
@@ -1167,22 +1179,22 @@ Avoid working with plants when foliage is wet to avoid spreading disease  causin
 Remove weeds and alternative hosts around a tomato field\n
 Fungicides also can help to control early blight please consult your supplier\n</string>
 
-<!--Fusarium crown and root rot-->
-<string name="Tomato_Fusarium_Crown_Title">Fusarium Crown and Root Rot</string>
-<string name="Tomato_Fusarium_Crown">Fusarium crown and root rot, caused by the fungus Fusarium oxysporum f. sp.
+    <!--Fusarium crown and root rot-->
+    <string name="Tomato_Fusarium_Crown_Title">Fusarium Crown and Root Rot</string>
+    <string name="Tomato_Fusarium_Crown">Fusarium crown and root rot, caused by the fungus Fusarium oxysporum f. sp.
         radicis-lycopersici. Plants infected with crown rot are stunted and yellow. Symptoms begin on older leaves
         and progress to entire plant. The entire plat eventually turns brown and dies. The roots are brown and
         may rot away due to secondary pathogens. The stems often have brown to secondary pathogens.
         Reddish to brown discoloration of the stem cortex when sliced lengthwise. The stems often have
         brown vascular streaks and dark brown lesions often occur on the stem near the soil line.
         Disease development is faster in cool wet soils, and the problem is often severe in greenhouse crops.</string>
-<string name="Tomato_Fusarium_Crown_IPM_Recomm">To minimize losses from fusarium crown rot, it is advisable to plant resistant varieties, and many resistant varieties are available.\n
+    <string name="Tomato_Fusarium_Crown_IPM_Recomm">To minimize losses from fusarium crown rot, it is advisable to plant resistant varieties, and many resistant varieties are available.\n
 Infection enters the plant through wounds, but it may also be seed born.\n
 Fungicide drenches is effective to control the disease please consult your supplier\n</string>
 
-<!--Fusarium wilt-->
-<string name="Tomato_Fusarium_Wilt_Title">Fusarium Wilt</string>
-<string name="Tomato_Fusarium_Wilt">Fusarium wilt is caused by the fungus Fusarium oxyspourm f. sp.
+    <!--Fusarium wilt-->
+    <string name="Tomato_Fusarium_Wilt_Title">Fusarium Wilt</string>
+    <string name="Tomato_Fusarium_Wilt">Fusarium wilt is caused by the fungus Fusarium oxyspourm f. sp.
         Lycopersici. It attacks only certain tomato cultivars. Plants infected by this soil-dwelling
         fungus show leaf yellowing and wilting that progress upward from the base of the stem, initially,
         only one side of a leaf midrib, one branch, or one side of a plant will be affected, the symptoms
@@ -1193,38 +1205,38 @@ Fungicide drenches is effective to control the disease please consult your suppl
         at all stages of development, but symptoms are most obvious at or soon after flowering. This disease
         severely attack potato, eggplant and pepper. High rainfall, over irrigation and poor drainage will
         create conducive environment for the disease.</string>
-<string name="Tomato_Fusarium_Wilt_IPM_Recomm">To minimize losses form fusarium wilt, it is advisable to plant resistant varieties, and many resistant varieties are available\n
+    <string name="Tomato_Fusarium_Wilt_IPM_Recomm">To minimize losses form fusarium wilt, it is advisable to plant resistant varieties, and many resistant varieties are available\n
 Resistant varieties may become infected, but disease will not be as severe as with susceptible varieties and a reasonable yield should still be obtained.\n
 In addition, plant on disease free seed or transplants in well drained, disease free soil\n
 Rotate at least four years away from tomatoes to reduce populations of the fungus in soil, and remove and destroy infected plant residue.\n
 In greenhouse or seedbeds, disinfest soil by treating with steam. Please consult your supplier.\n</string>
 
 
-<!-- Gray leaf spot-->
-<string name="Tomato_Gray_Leaf_Spot_Title">Gray Leaf Spot</string>
-<string name="Tomato_Gray_Leaf_Spot">Gray leaf spot is a common disease of tomato and pepper in warm,
+    <!-- Gray leaf spot-->
+    <string name="Tomato_Gray_Leaf_Spot_Title">Gray Leaf Spot</string>
+    <string name="Tomato_Gray_Leaf_Spot">Gray leaf spot is a common disease of tomato and pepper in warm,
         humid production areas. The disease can be caused by two different fungi of the genus Stemphylium,
         namely Fungus Stemphylium floridanum and Stemphylium botryosum. Small brownish black specks first
         appear on the undersides of the leaves. These later develop into larger necrotic areas, and the
         tissue often falls out, leaving a shot hole type appearance, spots may be surrounded by a yellow
         halo. Yellowing, leaf drop, and defoliation may occur in severe cases.</string>
-<string name="Tomato_Gray_Leaf_Spot_IPM_Recomm">The fungus can survive from year to year on solanaceous weeds, so weed control is important.\n
+    <string name="Tomato_Gray_Leaf_Spot_IPM_Recomm">The fungus can survive from year to year on solanaceous weeds, so weed control is important.\n
 Many commercial varieties are resistant.\n
 Leaf moisture from rains or dew increases disease severity.\n
 Fungicides may be used as recommended. Please consult your supplier.\n</string>
 
-<!--Gray mold ( Botrytis cinerea)-->
-<string name="Tomato_Gray_Mold_Title">Gray Mold ( Botrytis cinerea)</string>
-<string name="Tomato_Gray_Mold">Gray mold, caused by the fungus botrytis cinerea, is a common disease
+    <!--Gray mold ( Botrytis cinerea)-->
+    <string name="Tomato_Gray_Mold_Title">Gray Mold ( Botrytis cinerea)</string>
+    <string name="Tomato_Gray_Mold">Gray mold, caused by the fungus botrytis cinerea, is a common disease
         of greenhouse grown tomatoes. This disease is characterized by a light gray fuzzy growth that
         appears on stems and leaves. Soft of the stem end of the fruit can also occur. Botrytis infections
         are most severe in greenhouses with moderate temperatures, high humidity, and stagnant air.</string>
-<string name="Tomato_Gray_Mold_IPM_Recomm">Increasing ventilation and air circulation to reduce humidity levels can be helpful\n
+    <string name="Tomato_Gray_Mold_IPM_Recomm">Increasing ventilation and air circulation to reduce humidity levels can be helpful\n
 Timely fungicide applications. Please consult your supplier.\n</string>
 
-<!--Late blight-->
-<string name="Tomato_Late_Blight_Title">Late Blight</string>
-<string name="Tomato_Late_Blight">Late blight disease is caused by an oomycete or water mold, microorganism
+    <!--Late blight-->
+    <string name="Tomato_Late_Blight_Title">Late Blight</string>
+    <string name="Tomato_Late_Blight">Late blight disease is caused by an oomycete or water mold, microorganism
         Phytophthora infestans. It is serious potato and tomato disease. Late blight can devastate tomato
         plantings during periods of cool rainy weather. Late blight may infect either young (upper) or old (lower)
         leaves. It first appears as water – soaked areas that enlarge rapidly. Forming irregular, greenish black
@@ -1234,7 +1246,7 @@ Timely fungicide applications. Please consult your supplier.\n</string>
         infected; the typical symptoms are brown – black spots on stems and branches. Late blight usually appears
         during persistent cool wet weather, or when cool night temperatures cause frequent heavy dews. P.
         infestans causes similar symptoms on potatoes and can spread from potatoes to tomatoes.</string>
-<string name="Tomato_Late_Blight_IPM_Recomm">To control late blight, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:\n
+    <string name="Tomato_Late_Blight_IPM_Recomm">To control late blight, a combination of cultural practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:\n
 Plant disease – free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly.\n
 Water at the base of the plants, and in the morning rather than the evening, to minimize the amount of time that the leaves are wet.\n
 Remove as much plant debris as possible in the fall and promptly plow under or bury the reaming residue.\n
@@ -1244,9 +1256,9 @@ Fungicides also can help to control Late blight. Please consult your supplier.\n
 </string>
 
 
-<!-- Powdery mildew-->
-<string name="Tomato_Powdery_Mildew_Title">Powdery Mildew</string>
-<string name="Tomato_Powdery_Mildew">Powdery mildew is caused by funguses Oidium neolycopersici
+    <!-- Powdery mildew-->
+    <string name="Tomato_Powdery_Mildew_Title">Powdery Mildew</string>
+    <string name="Tomato_Powdery_Mildew">Powdery mildew is caused by funguses Oidium neolycopersici
         or Leveillula taurica. It causes severe white powder on all aerial parts of tomato, excluding the fruit.
         Leaf symptoms of Oidiopsis taurica consist of yellow blotches or spots on the upper leaf surface.
         A white powdery growth occurs on the underside of the leaves. This fungus penetrates within the leaf
@@ -1265,7 +1277,7 @@ Fungicides also can help to control Late blight. Please consult your supplier.\n
         development occurs at 22 °C particularly after 16 or 24 hours of leaf wetness; symptoms can appear
         within 7 days from the time that the spore lands on the leaf surface.
 </string>
-<string name="Tomato_Powdery_Mildew_IPM_Recomm">Avoid high rates of nitrogen, which make plants more susceptible to infection.\n
+    <string name="Tomato_Powdery_Mildew_IPM_Recomm">Avoid high rates of nitrogen, which make plants more susceptible to infection.\n
 Avoid crowding and shading, which lead to the development of leaf wetness and conditions that promote infection.\n
 Avoid overhead irrigation for the same reason.\n
 Avoid planting young tomato plants while diseased plants remain nearby.\n
@@ -1273,9 +1285,9 @@ Control weeds around the planting site since both fungi have a wide host range a
 </string>
 
 
-<!-- Root knot nematodes-->
-<string name="Tomato_Root_Knot_Nematods_Title">Root Knot Nematodes</string>
-<string name="Tomato_Root_Knot_Nematods">The root-knot nematode (Meloidogyne spp.) is a major plant pathogen,
+    <!-- Root knot nematodes-->
+    <string name="Tomato_Root_Knot_Nematods_Title">Root Knot Nematodes</string>
+    <string name="Tomato_Root_Knot_Nematods">The root-knot nematode (Meloidogyne spp.) is a major plant pathogen,
         affecting several solanaceous crops worldwide. Nematode infestations damage the plant roots, and therefore
         symptoms reflect poorly functioning root systems. Above ground symptoms of severe root knot and stubby
         root nematode infestations include patches of chlorotic, stunted, necrotic, or wilted plants. Plants
@@ -1286,16 +1298,16 @@ Control weeds around the planting site since both fungi have a wide host range a
         infection by soil-inhabiting fungi such as Fusarium and Verticillium species. \nFeeding by root knot nematodes
         results in characteristic galls on roots. Severely galled roots may appear malformed and the root system
         shortened and thickened. In general, lighter, sandy soils favor nematode infection and result in more severe damage to roots.</string>
-<string name="Tomato_Root_Knot_Nematods_IPM_Recomm">In fields infested with root knot nematodes, crop rotation may not be feasible because of their extensive host range;\n
+    <string name="Tomato_Root_Knot_Nematods_IPM_Recomm">In fields infested with root knot nematodes, crop rotation may not be feasible because of their extensive host range;\n
 Care is needed in the selection of rotation crops because some may be good alternate hosts.\n
 Alternation with a ”trap crop” such as Elbon cereal rye which limits nematode reproduction may be effective.\n
 It is advisable to plant resistant varieties, and many resistant varieties are available.\n
 Soil solarization may help to lower the nematodes in the top layers of the soil and avoid an early infestation of the plants.\n
 Roots are likely to become infested as the season progresses by nematodes that survived in the deeper soil layers.\n</string>
 
-<!-- Damping off-->
-<string name="Tomato_Damping_Off_Title">Damping Off</string>
-<string name="Tomato_Damping_Off">Damping off is caused by fungus or fungus-like microorganisms, Pythium spp.,
+    <!-- Damping off-->
+    <string name="Tomato_Damping_Off_Title">Damping Off</string>
+    <string name="Tomato_Damping_Off">Damping off is caused by fungus or fungus-like microorganisms, Pythium spp.,
         Phytophthora spp., Fusarium spp., Rhizoctonia solani, and other fungi. Affected plants usually occur in
         patches in nursery beds or in low parts of sloped fields. In level fields, affected plants are generally
         found in scattered areas. \nDamping off may occur before and/or after emergence. In pre-emergence damping
@@ -1304,7 +1316,7 @@ Roots are likely to become infested as the season progresses by nematodes that s
         shortly afterwards. The affected portions (roots, hypocotyls and perhaps the crown of the plant) are pale
         brown, soft, water soaked, and thinner than non-affected tissue. Infected stems collapse. Stunting of plants
         due to root rot or collar rot may also occur.</string>
-<string name="Tomato_Damping_Off_IPM_Recomm">use plug transplants and a soilless pathogen-free growth medium\n
+    <string name="Tomato_Damping_Off_IPM_Recomm">use plug transplants and a soilless pathogen-free growth medium\n
 Water seedlings only when the soil or growth medium is dry, preferably in the morning to allow drying to occur by the late afternoon.\n
 Avoid contact with ground soil or other sources of contamination.\n
 Choose well-drained locations and Keep the seedbed well ventilated and Sow on raised beds.\n
@@ -1314,9 +1326,9 @@ Surface irrigation ponds may be a source of fungal contamination.\n
 Pots or transplant containers should be new or treated recently with a disinfectant (10% household bleach) or\n
 </string>
 
-<!--Septoria leaf spot-->
-<string name="Tomato_Septoria_Leaf_Spot_Title">Septoria Leaf Spot</string>
-<string name="Tomato_Septoria_Leaf_Spot">Septoria leaf spot is caused by a fungus, Septoria lycopersici.
+    <!--Septoria leaf spot-->
+    <string name="Tomato_Septoria_Leaf_Spot_Title">Septoria Leaf Spot</string>
+    <string name="Tomato_Septoria_Leaf_Spot">Septoria leaf spot is caused by a fungus, Septoria lycopersici.
         It is one of the most destructive diseases of tomato foliage and is particularly severe in areas where
         wet, humid weather persists for extended periods. This disease first appears as small, water-soaked
         spots that soon become circular spots about 0.3 cm in diameter. The lesions gradually develop grayish
@@ -1327,7 +1339,7 @@ Pots or transplant containers should be new or treated recently with a disinfect
         And the disease progresses upward if rainy weather persists. Defoliation can be sever after periods
         of prolonged warm, wet weather. Infection can occur at any stage of plant development but appears most
         frequently after plants have begun to set fruit. The fungus survives the winter in tomato debris. </string>
-<string name="Tomato_Septoria_Leaf_Spot_IPM_Recomm">To control septoria leaf spot a combination of cultural practices is often needed.\n
+    <string name="Tomato_Septoria_Leaf_Spot_IPM_Recomm">To control septoria leaf spot a combination of cultural practices is often needed.\n
 This practices is often needed. These practices, which also will help to reduce the risk of many other diseases, include the following:\n
 Plant disease – free transplants far enough apart so that the plants will not be crowded after they are fully grown, in order to help the foliage dry rapidly.\n
 Water at the base of the plants, and in the morning rather than the evening, to minimize the amount of time that the leaves are wet.\n
@@ -1336,24 +1348,24 @@ Rotate crops so that tomatoes are grown in the same ground only three or four ye
 Avoid working with plants when foliage is wet to avoid spreading disease causing micro- organisms\n
 Fungicides also can help to control septoria leaf spot\n</string>
 
-<!-- Tomato spotted wilt virus (TSWV)-->
-<string name="Tomato_Spotted_Wilt_Virus_Title">Tomato Spotted Wilt Virus (TSWV)</string>
-<string name="Tomato_Spotted_Wilt_Virus">One of the most common virus disease is Tomato Spotted Wilt Virus (TSWV).
+    <!-- Tomato spotted wilt virus (TSWV)-->
+    <string name="Tomato_Spotted_Wilt_Virus_Title">Tomato Spotted Wilt Virus (TSWV)</string>
+    <string name="Tomato_Spotted_Wilt_Virus">One of the most common virus disease is Tomato Spotted Wilt Virus (TSWV).
         TSWV causes distinctive yellow ring spots on mature fruit. Foliage also can be affected; plants
         are usually stunted and tip leaves show a purplish discoloration. Sometimes, it may lead to
         confusion with water deficiency. Thrips, which are small (2mm long) brownish yellow insects
         spread the virus. Plants can be affected as transplants while growing in a greenhouse; after
         transplanting, stunting and failure to set fruit may be the most noticeable symptoms.</string>
-<string name="Tomato_Spotted_Wilt_Virus_IPM_Recomm">To minimize losses from TSWV, It is advisable to plant resistant varieties, and many resistant varieties are available.\n
+    <string name="Tomato_Spotted_Wilt_Virus_IPM_Recomm">To minimize losses from TSWV, It is advisable to plant resistant varieties, and many resistant varieties are available.\n
 Planting only certified virus free transplants. It is the best technique for managing viruses.\n
 It is helpful to verify that greenhouse used to produce transplants conducts a vigorous program to control aphids and thrips.\n
 There is now way to “cure” a virus infected plant. However, removing the infected plant as soon as symptoms are found can help prevent spread by insects to healthy plants.\n
 Many viruses that infect tomato also infect peppers and potatoes; so avoid planting these crops next to each other.\n
 Thrips control may also be beneficial in the transplant and early season phases.\n</string>
 
-<!-- Tomato mosaic virus (ToMV) -->
-<string name="Tomato_Mosaic_Virus_Title">Tomato mosaic virus (ToMV)</string>
-<string name="Tomato_Mosaic_Virus">Symptoms can be found during any growth stage and all plant parts are affected.
+    <!-- Tomato mosaic virus (ToMV) -->
+    <string name="Tomato_Mosaic_Virus_Title">Tomato mosaic virus (ToMV)</string>
+    <string name="Tomato_Mosaic_Virus">Symptoms can be found during any growth stage and all plant parts are affected.
         Generally, infected plants have a light or dark green mottling or mosaic with distortion of younger leaves,
         and stunting to varying degrees. Severely affected leaves may have a “fernlike” appearance and may show raised
         dark green areas. Fruit set may be severely reduced in affected plants. There may be internal browning of the
@@ -1372,7 +1384,7 @@ Thrips control may also be beneficial in the transplant and early season phases.
         for 22 months. It can also persist in greenhouse structures for long periods of time. Healthy seedlings planted
         into contaminated soil can be infected through minor wounds caused by damage to roots. The virus may also be
         present in water used for irrigation. Dissemination of tiny particles of contaminated soil by wind is also possible.</string>
-<string name="Tomato_Mosaic_Virus_IPM_Recomm">Use seed from healthy plants only.\n
+    <string name="Tomato_Mosaic_Virus_IPM_Recomm">Use seed from healthy plants only.\n
 Dry heating seed at 70°C for 4 days or at 82-85°C for 24hr will help to eliminate surface-borne virus.\n
 ToMV on the seed coat can be eliminated by soaking seed for 15 min in 100 g/l of tri-sodium phosphate solution (TSP), rinsing thoroughly, and spreading seeds out to dry.\n
 Use a minimum 2-year rotation.\n
@@ -1388,9 +1400,9 @@ This can be done by:\n
 Work in diseased areas last after working in unaffected parts of a field.\n
 Wash clothing that comes into contact with ToMV-infected plants with hot water and a detergent.\n</string>
 
-<!--Tomato yellow leaf curl virus (TYLCV)-->
-<string name="Tomato_Yellow_Leaf_Virus_Title">Tomato Yellow Leaf Curl Virus (TYLCV)</string>
-<string name="Tomato_Yellow_Leaf_Virus">Tomato yellow leaf curl virus can infect a relatively wide
+    <!--Tomato yellow leaf curl virus (TYLCV)-->
+    <string name="Tomato_Yellow_Leaf_Virus_Title">Tomato Yellow Leaf Curl Virus (TYLCV)</string>
+    <string name="Tomato_Yellow_Leaf_Virus">Tomato yellow leaf curl virus can infect a relatively wide
         range of plant species tomato is the host to which the virus is best adapted and that facilitates
         the buildup of the virus to high incidences in the field. Other hosts include solanaceous crops,
         which may develop symptomless infections, and weeds. Tomato yellow leaf curl virus (TYLCV), a
@@ -1408,7 +1420,7 @@ Wash clothing that comes into contact with ToMV-infected plants with hot water a
         are infected at an early age, and it is not uncommon for losses of 100% to be experienced in fields
         with heavily infected plants. \nTomato yellow leaf curl virus is undoubtedly one on the most damaging
         diseases of tomato, and it limits production of tomato in many tropical and subtropical areas of the world.</string>
-<string name="Tomato_Yellow_Leaf_Virus_IPM_Recomm">The primary way the virus is spread over short distances is by the bemisia whitefly species.\n
+    <string name="Tomato_Yellow_Leaf_Virus_IPM_Recomm">The primary way the virus is spread over short distances is by the bemisia whitefly species.\n
 Over long distance, the virus is primarily spread through the movement of infected plants; especially tomato disease symptoms to develop, infected symptomless plants could be unknowingly transported.\n
 The virus also can be moved over long distance by virus- carrying whiteflies that are transported on tomatoes or other plants (e.g. ornamentals) or via high winds, hurricanes, or tropical storms. Strategies to effectively manage the disease include:\n\n
 Before planting\n\n
@@ -1426,11 +1438,11 @@ After the growing season\n
 Remove and destroy old crop residue and volunteers on a regional basis.\n</string>
 
 
-<!-- Disorder-->
+    <!-- Disorder-->
 
-<!-- Blossom End Rot-->
-<string name="Tomato_Blossom_End_Rot_Title">Blossom End Rot</string>
-<string name="Tomato_Blossom_End_Rot">Blossom End Rot (BER) is a very common problem on green and
+    <!-- Blossom End Rot-->
+    <string name="Tomato_Blossom_End_Rot_Title">Blossom End Rot</string>
+    <string name="Tomato_Blossom_End_Rot">Blossom End Rot (BER) is a very common problem on green and
         ripe tomatoes. It is a deficiency of Calcium and is related to wide fluctuations in available
         moisture and Irrigation. The diagnostic symptom is a light tan lesion turning to a dark brown
         sunken area at the blossom end of the fruit. The lesion typically enlarges and becomes more sunken
@@ -1438,7 +1450,7 @@ Remove and destroy old crop residue and volunteers on a regional basis.\n</strin
         frequently invade the lesion and cause complete rotting of the fruit. It often occurs in rapidly
         developing fruit during periods of hot, dry weather and tends to have the greatest impact on the
         earliest maturing fruit. Normally, fruit that are about half developed are the first to show symptoms.</string>
-<string name="Tomato_Blossom_End_Rot_IPM_Recomm">To prevent Blossom End Rot, maintain a steady rate of plant growth without stress.\n
+    <string name="Tomato_Blossom_End_Rot_IPM_Recomm">To prevent Blossom End Rot, maintain a steady rate of plant growth without stress.\n
 A consistent and ample supply of moisture can reduce the problem by helping to maintain a steady flow of calcium from the soil to the fruit.\n
 Mulching also will help by conserving soil moisture.\n
 Blossom End Rot is more serious when an excess of nitrogen fertilizer has been applied as it promotes excessive vegetative growth, which in turns increases transpiration surface area and prevents calcium transport and accumulation on the fruit.\n
@@ -1450,41 +1462,41 @@ Application of calcium fertilizers before planting are commonly used to reduce t
 Fields which are difficult to irrigate uniformly or those with high salinity should be avoided.\n
 Root injury caused by mechanical damage or disease can exacerbate this condition and should be avoided.\n</string>
 
-<!-- Sunscald in tomato -->
-<string name="Tomato_Sunscald_In_Tomato_Title">Sunscald In Tomato</string>
-<string name="Tomato_Sunscald_In_Tomato">Sunscald first appears as light patches on green or ripening
+    <!-- Sunscald in tomato -->
+    <string name="Tomato_Sunscald_In_Tomato_Title">Sunscald In Tomato</string>
+    <string name="Tomato_Sunscald_In_Tomato">Sunscald first appears as light patches on green or ripening
         fruit. Most often, sunscald develops on the side of the fruit that faces the sun during hot weather.
         As the patches grow, they may blister and may become grayish-white Affected sunscald tomatoes can
         develop black mold. It is more apparent on plants that have sparse foliage or those that may have
         previously lost a good deal of leaves to a leaf-defoliating disease. Sunscald is especially prevalent
         on previously shaded plant parts that have been suddenly exposed to the sun. The damaged areas are
         vulnerable to attack by insects, fungi, and bacteria.</string>
-<string name="Tomato_Sunscald_In_Tomato_IPM_Recomm">Don’t over-prune tomato plants, especially in hot climates. If you leave extra branches on plants, you’ll provide extra shade for fruit.\n
+    <string name="Tomato_Sunscald_In_Tomato_IPM_Recomm">Don’t over-prune tomato plants, especially in hot climates. If you leave extra branches on plants, you’ll provide extra shade for fruit.\n
 Practice controls for leaf diseases in order to prevent defoliation that leaves the fruits more vulnerable to sunscald.\n
 These practices may include crop rotation, proper sanitation, and the use of fungicides.\n
 Plant varieties that are tolerant to disease. Specially, select varieties that tolerate Septoria leaf spot and early blight, two of the most common defoliating diseases.\n
 </string>
 
-<!-- Fruit Macro Cracking-->
-<string name="Tomato_Fruit_Macro_Cracking_Title">Fruit Macro Cracking</string>
-<string name="Tomato_Fruit_Macro_Cracking">Two types of cracks may develop on tomato fruit. Radial
+    <!-- Fruit Macro Cracking-->
+    <string name="Tomato_Fruit_Macro_Cracking_Title">Fruit Macro Cracking</string>
+    <string name="Tomato_Fruit_Macro_Cracking">Two types of cracks may develop on tomato fruit. Radial
         growth cracks radiate from the stem, and concentric cracks encircle the fruit, usually on the
         shoulders. Similar to Blossom End Rot, cracking is associated with raping fruit development
         and wide fluctuation in water availability to the plant. Fruit that has reached the ripening
         stage during dry weather may show considerable cracking if the dry period is followed by heavy
         rains and high temperatures.</string>
-<string name="Tomato_Fruit_Macro_Cracking_IPM_Recomm">As with Blossom End Rot, mulching and avoiding heavy applications of nitrogen fertilizer should help reduce fruit cracking.\n
+    <string name="Tomato_Fruit_Macro_Cracking_IPM_Recomm">As with Blossom End Rot, mulching and avoiding heavy applications of nitrogen fertilizer should help reduce fruit cracking.\n
 Tomato varieties differ considerably in the amount and severity of cracking under climatic conditions.\n
 </string>
 
-<!--Fruit Micro Cracking / Russeting-->
-<string name="Tomato_Fruit_Micro_Cracking_Russeting_Title">Fruit Micro Cracking / Russeting</string>
-<string name="Tomato_Fruit_Micro_Cracking_Russeting">Fruit Russeting is characterized by multiple micro
+    <!--Fruit Micro Cracking / Russeting-->
+    <string name="Tomato_Fruit_Micro_Cracking_Russeting_Title">Fruit Micro Cracking / Russeting</string>
+    <string name="Tomato_Fruit_Micro_Cracking_Russeting">Fruit Russeting is characterized by multiple micro
         cracks in the tomato skin, also called cuticle cracking. Russeting decreases shelf life and, with time,
         can evolve into dark shoulders due to water loss. This further reduces visual appearance and fruits
         cannot be sold. The sequence of high and low fruit expansion rates combined with low fruit skin
         elasticity is responsible for russeting.</string>
-<string name="Tomato_Fruit_Micro_Cracking_Russeting_IPM_Recomm">A combination of crop management practices, greenhouse temperature management, and irrigation strategies should be used to reduce the occurrence of this disorder.\n
+    <string name="Tomato_Fruit_Micro_Cracking_Russeting_IPM_Recomm">A combination of crop management practices, greenhouse temperature management, and irrigation strategies should be used to reduce the occurrence of this disorder.\n
 Crop management practices include maintain a low but constant fruit growth rate, reducing the leaf/fruit ratio, installing a shade screen to avoid excess fruit temperatures.\n
 Whenever possible, harvesting before pink stage effectively helps reducing fruit cracking. Air temperature should increase gradually from night to daytime and the difference between day and night air temperatures should be minimized to reduce fruit maturation period.\n
 The most important control is based on irrigation management.\n
@@ -1493,19 +1505,19 @@ Regarding nutrition, it is important to provide the plant with the abundant supp
 Cracking is an inherited tendency and different cultivars have different susceptibility to fruit cracking.\n
 </string>
 
-<!-- Failure to set fruit-->
-<string name="Tomato_Failure_To_Set_Fruit_Title">Failure To Set Fruit</string>
-<string name="Tomato_Failure_To_Set_Fruit">High dry season temperatures can reduce the number of
+    <!-- Failure to set fruit-->
+    <string name="Tomato_Failure_To_Set_Fruit_Title">Failure To Set Fruit</string>
+    <string name="Tomato_Failure_To_Set_Fruit">High dry season temperatures can reduce the number of
         tomato fruit harvested in several ways. High day and night temperatures will reduce flower production
         on tomato plants. If the night temperatures are above 21 degree Celsius, flower production and
         pollination are reduced. High temperatures for several consecutive days, coupled with drought
         conditions, will lead to poor pollination and cause flowers to drop from the plants. Hot drying
         wind may intensify the problem. Plants sometimes drop their flowers when night temperatures are
         lower than 13 degrees Celsius.</string>
-<string name="Tomato_Failure_To_Set_Fruit_IPM_Recomm">The most favorable night range for tomato fruit set is between 14 and 20 degrees Celsius.\n</string>
+    <string name="Tomato_Failure_To_Set_Fruit_IPM_Recomm">The most favorable night range for tomato fruit set is between 14 and 20 degrees Celsius.\n</string>
 
-<string name="note_Title">Before you apply the recommended pesticides, Note the following points!</string>
-<string name="note">Use recommended and registered chemicals\n\n
+    <string name="note_Title">Before you apply the recommended pesticides, Note the following points!</string>
+    <string name="note">Use recommended and registered chemicals\n\n
     To prevent resistance development, rotate chemical mode of action groups.\n\n
     Prevent resistance development by rotating chemical mode of action groups.\n\n
     About rate of application, follow the label instructions given by the manufacturing company and local suppliers.\n\n
@@ -1514,10 +1526,11 @@ Cracking is an inherited tendency and different cultivars have different suscept
     For better result, please consult your local specialist.
 </string>
 
-<string name="popup_btn_Okay">Okay!</string>
+    <string name="popup_btn_Okay">Okay!</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
 
-<!-- Strings used for fragments for navigation -->
-<!--
+    <!-- Strings used for fragments for navigation -->
+    <!--
 <string name="first_fragment_label">First Fragment</string>
 <string name="second_fragment_label">Second Fragment</string>
 <string name="next">Next</string>

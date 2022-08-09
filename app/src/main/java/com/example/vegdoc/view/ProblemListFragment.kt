@@ -1,7 +1,6 @@
 package com.example.vegdoc.view
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,16 +15,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vegdoc.MainActivity
 import com.example.vegdoc.R
 import com.example.vegdoc.adapter.ProblemAdapter
-import com.example.vegdoc.adapter.VegetableAdapter
 import com.example.vegdoc.databinding.FragmentProblemListBinding
 import com.example.vegdoc.model.Problem
-import com.example.vegdoc.model.Vegetable
+import com.example.vegdoc.util.Constants.CURRENT_LANGUAGE
+import com.example.vegdoc.util.PreferenceHelper.defaultPrefs
 import com.example.vegdoc.view.disorders.DisordersFragmentArgs
 import com.example.vegdoc.viewModel.ProblemViewModel
-import kotlinx.coroutines.DelicateCoroutinesApi
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 
 class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickListener {
@@ -54,15 +49,21 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
 
         vegetableId = args.id
         type = args.type
-        (activity as MainActivity).setTitle(type)
         problemViewModel = ViewModelProvider(this, )[ProblemViewModel::class.java]
         val problemListRecyclerView: RecyclerView = binding.problemListRecyclerView
-        problemListRecyclerView.layoutManager = LinearLayoutManager(context!!, LinearLayoutManager.VERTICAL, false)
+        problemListRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
         problemAdapter = ProblemAdapter(problems,this)
 
         problemListRecyclerView.adapter = problemAdapter
         observeEvents()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if(activity != null){
+            (activity as MainActivity).setTitle(args.title)
+        }
     }
 
     private fun observeEvents() {
@@ -86,7 +87,9 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
 
     override fun onClick(index: Int) {
         val id = problems[index].id
-        val name = problems[index].name
+        var name = problems[index].name
+        if(defaultPrefs(requireContext()).getString(CURRENT_LANGUAGE,"en").equals("am"))
+            name = problems[index].amharicName
         Navigation.createNavigateOnClickListener(
             R.id.action_problemListFragment_to_disorderDetailFragment,
             bundleOf("id" to id,"name" to name)
