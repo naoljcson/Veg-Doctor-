@@ -14,10 +14,15 @@
         android:theme="@style/Theme.VegDoc"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreenActivity"
-            android:exported="false"
-            android:label="@string/title_activity_splash_screen"
-            android:theme="@style/Theme.VegDoc.NoActionBar" />
+            android:name=".view.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.VegDoc.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".view.DetailInformationActivity"
             android:exported="false"
@@ -36,7 +41,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

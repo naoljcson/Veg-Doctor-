@@ -13,7 +13,7 @@ import com.example.vegdoc.model.Vegetable
 import com.example.vegdoc.util.Constants.DB_NAME
 
 
-@Database(entities = [Vegetable::class, Problem::class, Product::class], version = 5)
+@Database(entities = [Vegetable::class, Problem::class, Product::class], version = 6)
 abstract class VegDoctorDatabase : RoomDatabase() {
 
     abstract fun vegetableDao(): VegetableDao

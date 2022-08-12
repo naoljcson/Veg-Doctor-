@@ -24,4 +24,9 @@ data class Problem(
 
     @ColumnInfo(name = "amharic_description")
     val amharicDescription: String?,
+
+    val recommendation: String?,
+
+    @ColumnInfo(name = "amharic_recommendation")
+    val amharicRecommendation: String?,
 )

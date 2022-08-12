@@ -1,66 +1,46 @@
 package com.example.vegdoc.view
 
-import android.content.res.Configuration
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.vegdoc.MainActivity
 import com.example.vegdoc.R
 import com.example.vegdoc.databinding.ActivitySplashScreenBinding
-import com.example.vegdoc.util.Constants.CURRENT_LANGUAGE
-import com.example.vegdoc.util.Constants.LOCAL_STORAGE
-import com.google.android.material.snackbar.Snackbar
-import java.util.*
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivitySplashScreenBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+        val imageView = binding.contributers
+        val agLogo = binding.logo
+        val appName = binding.appName
+        val appdevelopedBy = binding.appDevelopBy
 
-        val navController = findNavController(R.id.nav_host_fragment_content_splash_screen)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        val animation1 = AnimationUtils.loadAnimation(
+            baseContext, R.anim.slide_in_right
+        )
+        val logoAnimation = AnimationUtils.loadAnimation(
+            baseContext, R.anim.slide_in_top
+        )
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-    }
+        imageView.startAnimation(animation1)
+        agLogo.startAnimation(logoAnimation)
+        appdevelopedBy.startAnimation(logoAnimation)
+        appName.startAnimation(logoAnimation)
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_splash_screen)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }
-
-    //load language saved in shared preferences
-    private fun loadLocale() {
-        val prefs = getSharedPreferences(LOCAL_STORAGE, MODE_PRIVATE)
-        val language = prefs.getString(CURRENT_LANGUAGE, "en")
-        setLocal(language)
-    }
-
-    private fun setLocal(lang: String?) {
-        if(lang != null){
-            val locale = Locale(lang)
-            Locale.setDefault(locale)
-            val config = Configuration()
-            config.setLocale(locale)
-            baseContext.createConfigurationContext(config)
-            //Save data to shared preferences
-            val editor = getSharedPreferences(LOCAL_STORAGE, MODE_PRIVATE).edit()
-            editor.putString(CURRENT_LANGUAGE, lang)
-            editor.apply()
-        }
+        Handler(Looper.getMainLooper()).postDelayed({
+            val mainActivity = Intent(this, MainActivity::class.java)
+            startActivity(mainActivity)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            finish()
+        }, 3000)
     }
 }
