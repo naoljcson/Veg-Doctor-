@@ -10,13 +10,8 @@ import android.widget.TextView
 import com.example.vegdoc.R
 import com.example.vegdoc.model.ActiveProduct
 import com.example.vegdoc.model.Product
-import com.example.vegdoc.util.Constants
 import com.example.vegdoc.util.PreferenceHelper
 
-//data class x(
-//    var  title: String,
-//    var products: List<Product>
-//)
 
 class CustomExpandableListAdapter(private val activeProducts: List<ActiveProduct>) :
     BaseExpandableListAdapter() {
@@ -55,12 +50,8 @@ class CustomExpandableListAdapter(private val activeProducts: List<ActiveProduct
             return view
         val preferences = PreferenceHelper(p3.context)
         val activeProduct: Product = activeProducts[p0].activeIngredient
-//        var title = "${activeProduct.ingridientName} (${activeProduct.classNo})"
-//        if(preferences?.getString(Constants.CURRENT_LANGUAGE,"eng").equals("am"))
-//            title = "${activeProduct.amharicIngridientName} ${activeProduct.classNoAmh}"
-//            titleView.text = title
         titleView.text = if (preferences.language == "am")
-            "${activeProduct.amharicIngridientName} ${activeProduct.classNoAmh}"
+            "${activeProduct.amharicIngridientName} (${activeProduct.classNoAmh})"
         else
             "${activeProduct.ingridientName} (${activeProduct.classNo})"
         titleView.setTypeface(null, Typeface.BOLD)

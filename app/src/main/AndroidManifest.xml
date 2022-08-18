@@ -24,25 +24,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.DetailInformationActivity"
-            android:exported="false"
-            android:label="@string/title_activity_dis_order_list"
-            android:theme="@style/Theme.VegDoc.NoActionBar" />
-        <activity
-            android:name=".view.DisOrderListActivity"
-            android:exported="false"
-            android:label="@string/title_activity_detail_information"
-            android:theme="@style/Theme.VegDoc.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.VegDoc.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
     </application>
 
