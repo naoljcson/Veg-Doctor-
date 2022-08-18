@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vegdoc.R
 import com.example.vegdoc.model.Problem
 import com.example.vegdoc.util.Constants
-import com.example.vegdoc.util.PreferenceHelper.defaultPrefs
+import com.example.vegdoc.util.PreferenceHelper
 
 
 class ProblemAdapter(private val dataSet: List<Problem>, private val listener: OnRecyclerViewItemClickListener ) :
@@ -30,12 +30,13 @@ class ProblemAdapter(private val dataSet: List<Problem>, private val listener: O
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         with(viewHolder){
-            val preferences = defaultPrefs(viewHolder.itemView.context)
-            primaryText.text = dataSet[position].name
-            secondaryText.text = dataSet[position].amharicName
-            if(preferences.getString(Constants.CURRENT_LANGUAGE,"en").equals("am")){
+            val preference = PreferenceHelper(viewHolder.itemView.context)
+            if(preference.language == "am"){
                 primaryText.text = dataSet[position].amharicName
                 secondaryText.text = dataSet[position].name
+            } else {
+                primaryText.text = dataSet[position].name
+                secondaryText.text = dataSet[position].amharicName
             }
             itemView.setOnClickListener { listener.onClick(position) }
         }

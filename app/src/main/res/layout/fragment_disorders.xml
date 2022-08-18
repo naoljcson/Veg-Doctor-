@@ -135,7 +135,7 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="72dp"
-                app:srcCompat="@drawable/disorders"
+                app:srcCompat="@drawable/disorder2"
                 android:scaleType="fitCenter"
                 android:layout_weight="0.25"
                 android:layout_margin="16dp"

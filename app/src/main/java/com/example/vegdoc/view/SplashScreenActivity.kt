@@ -1,6 +1,7 @@
 package com.example.vegdoc.view
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,12 +10,24 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.vegdoc.MainActivity
 import com.example.vegdoc.R
 import com.example.vegdoc.databinding.ActivitySplashScreenBinding
+import com.example.vegdoc.util.PreferenceHelper
+import java.util.*
 
 class SplashScreenActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashScreenBinding
+    private lateinit var preferenceHelper: PreferenceHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        preferenceHelper = PreferenceHelper(this)
+
+        val locale = Locale(preferenceHelper.language)
+        Locale.setDefault(locale)
+        val config = Configuration()
+        config.locale = locale
+        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
+
+
 
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -41,6 +54,6 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(mainActivity)
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finish()
-        }, 3000)
+        }, 3_000)
     }
 }

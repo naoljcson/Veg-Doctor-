@@ -1,5 +1,6 @@
 package com.example.vegdoc.view
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,8 +18,7 @@ import com.example.vegdoc.R
 import com.example.vegdoc.adapter.ProblemAdapter
 import com.example.vegdoc.databinding.FragmentProblemListBinding
 import com.example.vegdoc.model.Problem
-import com.example.vegdoc.util.Constants.CURRENT_LANGUAGE
-import com.example.vegdoc.util.PreferenceHelper.defaultPrefs
+import com.example.vegdoc.util.PreferenceHelper
 import com.example.vegdoc.view.disorders.DisordersFragmentArgs
 import com.example.vegdoc.viewModel.ProblemViewModel
 
@@ -32,15 +32,14 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
     private val problems = mutableListOf<Problem>()
 
     private lateinit var problemViewModel: ProblemViewModel
-    private  var vegetableId: Int = 0
-    private  var type: String = ""
+    private var vegetableId: Int = 0
+    private var type: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-        _binding = FragmentProblemListBinding.inflate(inflater,container,false)
+        _binding = FragmentProblemListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -49,11 +48,12 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
 
         vegetableId = args.id
         type = args.type
-        problemViewModel = ViewModelProvider(this, )[ProblemViewModel::class.java]
+        problemViewModel = ViewModelProvider(this)[ProblemViewModel::class.java]
         val problemListRecyclerView: RecyclerView = binding.problemListRecyclerView
-        problemListRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        problemListRecyclerView.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
-        problemAdapter = ProblemAdapter(problems,this)
+        problemAdapter = ProblemAdapter(problems, this)
 
         problemListRecyclerView.adapter = problemAdapter
         observeEvents()
@@ -62,19 +62,25 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
     override fun onResume() {
         super.onResume()
         if(activity != null){
-            (activity as MainActivity).setTitle(args.title)
+            var title: String = ""
+            when(args.type){
+                "Pest" -> title =  getString(R.string.pest)
+                "Disease"-> title =  getString(R.string.disease)
+                "Disorder"-> title =  getString(R.string.disorder)
+            }
+            (activity as MainActivity).setTitle(title)
         }
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun observeEvents() {
         problemViewModel.allProblems.observe(viewLifecycleOwner, Observer { list ->
             list?.let {
                 problems.clear()
                 list.forEach { problem ->
-                    if(problem.vegetableId == vegetableId && problem.type == type)
+                    if (problem.vegetableId == vegetableId && problem.type == type)
                         problems.add(problem)
                 }
-
                 problemAdapter.notifyDataSetChanged()
             }
         })
@@ -87,12 +93,13 @@ class ProblemListFragment : Fragment(), ProblemAdapter.OnRecyclerViewItemClickLi
 
     override fun onClick(index: Int) {
         val id = problems[index].id
-        var name = problems[index].name
-        if(defaultPrefs(requireContext()).getString(CURRENT_LANGUAGE,"en").equals("am"))
-            name = problems[index].amharicName
+        val name = if (PreferenceHelper(requireContext()).language == "am")
+            problems[index].amharicName
+        else
+            problems[index].name
         Navigation.createNavigateOnClickListener(
             R.id.action_problemListFragment_to_disorderDetailFragment,
-            bundleOf("id" to id,"name" to name)
+            bundleOf("id" to id, "name" to name)
         ).onClick(view)
     }
 }

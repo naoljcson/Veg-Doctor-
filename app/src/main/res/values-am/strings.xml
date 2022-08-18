@@ -19,7 +19,7 @@
 
     <string name="pest">ተባይ</string>
     <string name="disease">በሽታ</string>
-    <string name="disorder">እክል</string>
+    <string name="disorder">የዕድገት መዛባት</string>
 
     <string name="title_activity_detail_information">DetailInformationActivity</string>
     <string name="title_activity_dis_order_list">DisOrderListActivity</string>
@@ -37,7 +37,7 @@
 
     <string name="navigation_drawer_open">መደርደሪያውን ክፈት</string>
     <string name="navigation_drawer_close">መደርደሪያውን ዝጋ</string>
-    <string name="references_Title">ዋቢ መጻሕፍት</string>
+    <string name="references_Title">ዋቢ መጻሕፍት</string>Cabbage_Club_root
     <string name="references">Bargeron, C.T., J.H. LaForest, J. Brock, D.B. Langston &amp; R.L. David, B. Dutta. (2015).
         \n\nVegDr Android App. (Version 2.0) [Mobile application software]. Available at https://play.google.com/store/apps/details?id=com.bugwood.
         \n\nvegetabledoctor Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).

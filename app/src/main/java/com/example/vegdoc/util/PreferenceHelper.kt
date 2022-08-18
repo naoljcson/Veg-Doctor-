@@ -4,12 +4,20 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
+import com.example.vegdoc.util.Constants.CURRENT_LANGUAGE
 import com.example.vegdoc.util.Constants.LOCAL_STORAGE
+import java.util.prefs.Preferences
 
 
-object PreferenceHelper {
+class PreferenceHelper(context: Context) {
+    private var preferences: SharedPreferences
 
-   fun defaultPrefs(context: Context):SharedPreferences = context.getSharedPreferences(LOCAL_STORAGE, MODE_PRIVATE)
+    init {
+        preferences = context.getSharedPreferences(LOCAL_STORAGE, MODE_PRIVATE)
+    }
+
+    fun defaultPrefs(context: Context): SharedPreferences =
+        context.getSharedPreferences(LOCAL_STORAGE, MODE_PRIVATE)
 
     private inline fun SharedPreferences.edit(operation: (SharedPreferences.Editor) -> Unit) {
         val editor = this.edit()
@@ -17,11 +25,15 @@ object PreferenceHelper {
         editor.apply()
     }
 
+    var language: String
+        get() = preferences.getString(CURRENT_LANGUAGE, "am").toString()
+        set(value) = preferences.edit().putString(CURRENT_LANGUAGE, value).apply()
+
+
     /**
      * puts a value for the given [key].
      */
-    operator fun SharedPreferences.set(key: String, value: Any?)
-            = when (value) {
+    operator fun SharedPreferences.set(key: String, value: Any?) = when (value) {
         is String? -> edit { it.putString(key, value) }
         is Int -> edit { it.putInt(key, value) }
         is Boolean -> edit { it.putBoolean(key, value) }
@@ -35,8 +47,10 @@ object PreferenceHelper {
      * [T] is the type of value
      * @param defaultValue optional defaultValue - will take a default defaultValue if it is not specified
      */
-    inline operator fun <reified T : Any> SharedPreferences.get(key: String, defaultValue: T? = null): T
-            = when (T::class) {
+    inline operator fun <reified T : Any> SharedPreferences.get(
+        key: String,
+        defaultValue: T? = null
+    ): T = when (T::class) {
         String::class -> getString(key, defaultValue as? String ?: "") as T
         Int::class -> getInt(key, defaultValue as? Int ?: -1) as T
         Boolean::class -> getBoolean(key, defaultValue as? Boolean ?: false) as T
@@ -44,4 +58,6 @@ object PreferenceHelper {
         Long::class -> getLong(key, defaultValue as? Long ?: -1) as T
         else -> throw UnsupportedOperationException("Not yet implemented")
     }
+
+
 }

@@ -11,9 +11,10 @@
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.2065" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2065" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18297101449275363" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/dialog_note.xml" value="0.21979166666666666" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_about_agtrain.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/fragment_about_hort_life_project.xml" value="0.19610507246376813" />
@@ -22,6 +23,7 @@
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/fragment_references.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/fragment_second2.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/fragment_third.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.19610507246376813" />

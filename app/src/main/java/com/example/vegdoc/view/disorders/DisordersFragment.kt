@@ -1,7 +1,6 @@
 package com.example.vegdoc.view.disorders
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +14,7 @@ import com.example.vegdoc.MainActivity
 import com.example.vegdoc.R
 import com.example.vegdoc.databinding.FragmentDisordersBinding
 import com.example.vegdoc.model.Problem
+import com.example.vegdoc.util.PreferenceHelper
 import com.example.vegdoc.view.home.HomeFragmentArgs
 import com.example.vegdoc.viewModel.ProblemViewModel
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -24,15 +24,16 @@ import kotlinx.coroutines.launch
 
 class DisordersFragment : Fragment() {
 
-   private var _binding: FragmentDisordersBinding? = null
-   private val binding get() = _binding!!
+    private var _binding: FragmentDisordersBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var problemViewModel: ProblemViewModel
-    private  var vegetableId: Int = 0
+    private var vegetableId: Int = 0
 
-    private  var peasts:  List<Problem> = emptyList()
-    private  var diseases:  List<Problem> = emptyList()
-    private  var disorders:  List<Problem> = emptyList()
+    private var peasts: List<Problem> = emptyList()
+    private var diseases: List<Problem> = emptyList()
+    private var disorders: List<Problem> = emptyList()
+    private var toolBarTitle: String = ""
 
     private val args: HomeFragmentArgs by navArgs()
 
@@ -44,44 +45,55 @@ class DisordersFragment : Fragment() {
         _binding = FragmentDisordersBinding.inflate(inflater, container, false)
 
         vegetableId = args.id
-        problemViewModel = ViewModelProvider(this, )[ProblemViewModel::class.java]
+
+        problemViewModel = ViewModelProvider(this)[ProblemViewModel::class.java]
 
         return binding.root
-    }
-
-    override fun onResume() {
-        super.onResume()
-        if(activity != null){
-            (activity as MainActivity).setTitle(args.name)
-        }
     }
 
     @SuppressLint("SetTextI18n")
     @OptIn(DelicateCoroutinesApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
         GlobalScope.launch(Dispatchers.Main) {
+            val selectedVegetable = problemViewModel.vegetableByProblemId(vegetableId)
+            toolBarTitle = if (PreferenceHelper(requireContext()).language == "am")
+                selectedVegetable.amharicName
+            else
+                selectedVegetable.name
+            (activity as MainActivity).setTitle(toolBarTitle)
             peasts = problemViewModel.allProblemsByVegetableId(vegetableId, "Pest")
-            diseases = problemViewModel.allProblemsByVegetableId(vegetableId,"Disease")
-            disorders = problemViewModel.allProblemsByVegetableId(vegetableId,"Disorder")
+            diseases = problemViewModel.allProblemsByVegetableId(vegetableId, "Disease")
+            disorders = problemViewModel.allProblemsByVegetableId(vegetableId, "Disorder")
             val numberOfElement = getString(R.string.numberOfElement)
-            with(binding){
-               numberOfPeasts.text =  "$numberOfElement ${peasts.count()}"
-                numberOfDiseases.text  = "$numberOfElement ${diseases.count()}"
-                numberOfDisOrders.text  ="$numberOfElement ${disorders.count()}"
+            with(binding) {
+                numberOfPeasts.text = "$numberOfElement ${peasts.count()}"
+                numberOfDiseases.text = "$numberOfElement ${diseases.count()}"
+                numberOfDisOrders.text = "$numberOfElement ${disorders.count()}"
 
-                peastCard.setOnClickListener { openDisorderDetail("Pest",getString(R.string.pest)) }
-                diseaseCard.setOnClickListener { openDisorderDetail("Disease",getString(R.string.disease))  }
-                disorderCard.setOnClickListener { openDisorderDetail("Disorder",getString(R.string.disorder))  }
+                peastCard.setOnClickListener {
+                    openDisorderDetail(
+                        "Pest"
+                    )
+                }
+                diseaseCard.setOnClickListener {
+                    openDisorderDetail(
+                        "Disease"
+                    )
+                }
+                disorderCard.setOnClickListener {
+                    openDisorderDetail(
+                        "Disorder"
+                    )
+                }
             }
         }
     }
 
-    private fun openDisorderDetail(type: String,title: String){
-        Navigation.createNavigateOnClickListener(R.id.action_nav_disorder_to_problemListFragment,
-            bundleOf("id" to vegetableId,"type" to type,"title" to title)).onClick(view)
+    private fun openDisorderDetail(type: String) {
+        Navigation.createNavigateOnClickListener(
+            R.id.action_nav_disorder_to_problemListFragment,
+            bundleOf("id" to vegetableId, "type" to type)
+        ).onClick(view)
     }
 }

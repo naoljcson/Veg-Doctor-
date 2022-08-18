@@ -52,9 +52,6 @@
         <action
             android:id="@+id/action_nav_disorder_to_problemListFragment"
             app:destination="@id/problemListFragment" />
-        <argument
-            android:name="title"
-            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/disorderDetailFragment"

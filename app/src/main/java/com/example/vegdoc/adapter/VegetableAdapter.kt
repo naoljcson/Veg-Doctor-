@@ -12,10 +12,12 @@ import com.example.vegdoc.R
 import com.example.vegdoc.model.Vegetable
 import com.example.vegdoc.util.Constants
 import com.example.vegdoc.util.PreferenceHelper
-import com.example.vegdoc.util.PreferenceHelper.get
 
 
-class VegetableAdapter(private val dataSet: List<Vegetable>,private val listener: OnRecyclerViewItemClickListener ) :
+class VegetableAdapter(
+    private val dataSet: List<Vegetable>,
+    private val listener: OnRecyclerViewItemClickListener
+) :
     RecyclerView.Adapter<VegetableAdapter.ViewHolder>() {
 
     /**
@@ -46,16 +48,17 @@ class VegetableAdapter(private val dataSet: List<Vegetable>,private val listener
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
         val context = viewHolder.itemView.context
-        val language = PreferenceHelper.defaultPrefs(context).getString(Constants.CURRENT_LANGUAGE,"en")
-        var vegetableName =  dataSet[position].name
-        if(language.equals("am"))
-            vegetableName =  dataSet[position].amharicName
+        val language = PreferenceHelper(context).language
+        var vegetableName = dataSet[position].name
+        if (language == "am")
+            vegetableName = dataSet[position].amharicName
         viewHolder.primaryTitle.text = vegetableName
-        viewHolder.itemView.setOnClickListener {listener.onClick(position)  }
+        viewHolder.itemView.setOnClickListener { listener.onClick(position) }
 
 
         val packageName = context.packageName
-        val resId = context.resources.getIdentifier(dataSet[position].imageName, "drawable", packageName)
+        val resId =
+            context.resources.getIdentifier(dataSet[position].imageName, "drawable", packageName)
         viewHolder.vegetableImage.setImageResource(resId)
 
     }

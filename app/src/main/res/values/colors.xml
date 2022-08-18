@@ -15,4 +15,5 @@
     <color name="secondaryLightColor">#4CB556</color>
     <color name="secondaryLightColor2">#97C4F58B</color>
     <color name="secondaryDarkColor">#005C11</color>
+    <color name="warning">#FFF8E1</color>
 </resources>
