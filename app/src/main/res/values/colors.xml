@@ -4,6 +4,8 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="black">#FF000000</color>
+    <color name="red">#E12020</color>
+    <color name="warning_text">#DC6904</color>
     <color name="black_transparent">#5C000000</color>
     <color name="dark_gray">#424242</color>
     <color name="white">#FFFFFFFF</color>

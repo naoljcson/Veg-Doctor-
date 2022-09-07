@@ -103,7 +103,7 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         Farmers Field School. \n\nVegDr is developed by AgTraIn PLC and funding provided by the Horti-LIFE
         project of SNV Netherlands Development Organization.
     </string>
-    <string name="contact_info"><b>AgTraIn plc</b>,\t agtraintrading@gmail.com, redietzewdu12@gmail.com, andnetbay@gmail.com</string>
+    <string name="contact_info"><b>AgTraIn plc</b>,\t agtraintrading@gmail.com, info@agtraintrading.com.et, andnetbay@gmail.com</string>
 
     <string name="action_settings">Change Language</string>
     <string name="onion">Onion</string>
@@ -171,7 +171,9 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
     <string name="pestControl_RecommendationTitle">Pest Control Recommendation</string>
     <!-- Cabbage Detail Information English-->
     <string name="problemName"> </string>
-
+    <string name="msg_no_product_found">
+        There are no specific methods of control, so contact your local agronomist and try to control it by implementing better prevention and control methods.
+    </string>
 
     <!-- Cabbage Detail Information English-->
 

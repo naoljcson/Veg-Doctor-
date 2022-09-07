@@ -89,7 +89,7 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
         ሐሳብ በመስጠት የአትክልት አምራች አርሶአደሮችና የግብርና ባለሞያዎችን ለማገዝ የሚያስችል ነው፡፡ \n\nምክረ ሐሳቡም በጸረ ተባይ ማሸጊያ
         ላይ ከሚገኙ መረጃዎችና በተለያዩ የምርምር ሥራዎችና በአርሶ አደሮች ማሳ ላይ ከተገኘ ተሞክሮ የተዘጋጀ ነው፡፡ <b>\n\nቬጅ ዶክተር</b> መተግበሪያ
         መሣሪያ በአግትሬን ኃ. የተ. የግል ድርጅት ከኤስ ኤን ቪ የኔዘርላንድስ የልማት ድርጅት ሆርቲ ላይፍ ከተሰኘው ፕሮጀክት በተገኘ የገንዘብ ድጋፍ የተዘጋጀ ነው፡፡ </string>
-    <string name="contact_info"><b>አግትሬን ኃ/የተ/ማህበር</b>,\t agtraintrading@gmail.com, redietzewdu12@gmail.com , andnetbay@gmail.com</string>
+    <string name="contact_info"><b>አግትሬን ኃ/የተ/ማህበር</b>,\t agtraintrading@gmail.com, info@agtraintrading.com.et , andnetbay@gmail.com</string>
 
     <string name="action_settings">ቋንቋ ቀይር</string>
     <string name="onion">ሽንኩርት</string>
@@ -154,7 +154,9 @@ Ravi Shankar, Seema Harsha &amp; Raj Bhandary (2014).
     <string name ="com_google_android_gms_fonts_certs"> as</string>
 
     <string name="pestControl_RecommendationTitle">የተቀናጀ የተባይ መከላከያ ዘዴ ምክረ ሐሳብ</string>
-
+    <string name="msg_no_product_found">
+        ዝርዝር የመቆጣጠሪያ መንገዶች ስለሌሉት በአቅራበያዎ የሚገኝ የግብርና ባለሞያ በማነጋገር የተሻለ የመከላከያ እና የመቆጣጠሪያ  ዘዴዎችን በመተግበር ለመቆጣጠር ይሞክሩ፡፡
+    </string>
     <!-- Cabbage Detail Information English-->
     <string name="problemName"> </string>
 

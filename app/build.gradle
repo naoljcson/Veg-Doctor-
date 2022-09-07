@@ -9,13 +9,18 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.vegdoc"
+        applicationId "com.erp.agtrain.snvproject1"
         minSdk 21
         targetSdk 32
-        versionCode 1
+        versionCode 5
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        bundle {
+            language {
+                enableSplit = false
+            }
+        }
     }
 
     buildTypes {

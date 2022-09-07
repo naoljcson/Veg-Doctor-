@@ -53,24 +53,33 @@ class SecondFragment : Fragment() {
         GlobalScope.launch(Dispatchers.Main) {
             val problemId = requireArguments().getInt(PROBLEM_ID)
             val activeProducts: MutableList<ActiveProduct> = mutableListOf()
-            products.clear()
-            products.addAll(productViewModel.allProductsByProblemId(problemId))
-            val activeIngredients: List<Product> = products.distinctBy { it.ingridientName }
-            activeIngredients.forEach { activeProduct ->
-                products.filter { it.ingridientName == activeProduct.ingridientName }.also {
-                    activeProducts.add(ActiveProduct(activeProduct, it.toMutableList()))
+            val allProducts = productViewModel.allProductsByProblemId(problemId)
+            if(allProducts.any()){
+                binding.productNotFound.visibility = View.GONE
+                binding.productFound.visibility = View.VISIBLE
+                products.clear()
+                products.addAll(allProducts)
+                val activeIngredients: List<Product> = products.distinctBy { it.ingridientName }
+                activeIngredients.forEach { activeProduct ->
+                    products.filter { it.ingridientName == activeProduct.ingridientName }.also {
+                        activeProducts.add(ActiveProduct(activeProduct, it.toMutableList()))
+                    }
                 }
+                binding.expandableListView.setAdapter(CustomExpandableListAdapter(activeProducts))
+                val problem = problemViewModel.problemsById(problemId)
+                val recommendation = if (preference.language == "am")
+                    problem.amharicRecommendation
+                else
+                    problem.recommendation
+                binding.recommendationButton.setOnClickListener {
+                    val customDialogFragment = CustomDialogFragment(recommendation)
+                    customDialogFragment.show(childFragmentManager, "Replace")
+                }
+            }else{
+                binding.productNotFound.visibility = View.VISIBLE
+                binding.productFound.visibility = View.GONE
             }
-            binding.expandableListView.setAdapter(CustomExpandableListAdapter(activeProducts))
-            val problem = problemViewModel.problemsById(problemId)
-            val recommendation = if (preference.language == "am")
-                problem.amharicRecommendation
-            else
-                problem.recommendation
-            binding.recommendationButton.setOnClickListener {
-                val customDialogFragment = CustomDialogFragment(recommendation)
-                customDialogFragment.show(childFragmentManager, "Replace")
-            }
+
         }
     }
 
