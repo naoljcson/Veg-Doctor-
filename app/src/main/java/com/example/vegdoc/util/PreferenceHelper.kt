@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import com.example.vegdoc.util.Constants.CURRENT_LANGUAGE
 import com.example.vegdoc.util.Constants.LOCAL_STORAGE
+import com.example.vegdoc.util.Constants.NEW_NOTIFICTION
 import java.util.prefs.Preferences
 
 
@@ -28,6 +29,10 @@ class PreferenceHelper(context: Context) {
     var language: String
         get() = preferences.getString(CURRENT_LANGUAGE, "am").toString()
         set(value) = preferences.edit().putString(CURRENT_LANGUAGE, value).apply()
+
+    var isNewNotification: Boolean
+        get() = preferences.getBoolean(NEW_NOTIFICTION, false)
+        set(value) = preferences.edit().putBoolean(NEW_NOTIFICTION, value).apply()
 
 
     /**

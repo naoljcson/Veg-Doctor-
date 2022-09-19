@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.vegdoc.adapter.CustomExpandableListAdapter
+import com.example.vegdoc.adapter.VegetableAdapter
 import com.example.vegdoc.databinding.FragmentSecondBinding
 import com.example.vegdoc.model.ActiveProduct
 import com.example.vegdoc.model.Product
@@ -82,6 +83,14 @@ class SecondFragment : Fragment() {
 
         }
     }
+
+    val recyclerViewItemClickListener = object : VegetableAdapter.OnRecyclerViewItemClickListener {
+        override fun onClick(index: Int) {
+            TODO("Not yet implemented")
+        }
+    }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

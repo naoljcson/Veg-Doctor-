@@ -20,6 +20,9 @@
         <argument
             android:name="name"
             app:argType="string" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_notification"
+            app:destination="@id/nav_notification" />
     </fragment>
 
     <fragment
@@ -99,6 +102,11 @@
         android:name="com.example.vegdoc.view.ReferencesFragment"
         android:label="@string/menu_references"
         tools:layout="@layout/fragment_references" />
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.vegdoc.view.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
 
 
 </navigation>

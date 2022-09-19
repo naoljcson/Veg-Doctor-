@@ -3,11 +3,14 @@ package com.example.vegdoc
 import android.app.AlertDialog
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -16,7 +19,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.vegdoc.databinding.ActivityMainBinding
 import com.example.vegdoc.util.PreferenceHelper
 import com.example.vegdoc.viewModel.VegetableViewModel
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.messaging.FirebaseMessaging
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +36,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         preference = PreferenceHelper(applicationContext)
-
+//      if(preference.isNewNotification){
+//          openNotifications()
+//      }
         val locale = Locale(preference.language)
         Locale.setDefault(locale)
         val config = Configuration()
@@ -45,13 +52,26 @@ class MainActivity : AppCompatActivity() {
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
 
-        appBarConfiguration = AppBarConfiguration(
+
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            val token = task.result
+            Log.i("MessagingService", "onCreate: $token")
+        })
+
+
+            appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
                 R.id.nav_about_agtrain,
                 R.id.nav_about_hort_life_project,
                 R.id.nav_references,
-                R.id.nav_about
+                R.id.nav_about,
+                R.id.nav_notification
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -102,6 +122,12 @@ class MainActivity : AppCompatActivity() {
         val mDialog = mBuilder.create()
         mDialog.show()
     }
+
+//    private fun openNotifications(){
+//        preference.isNewNotification = false
+//        Navigation.createNavigateOnClickListener(
+//            R.id.action_nav_home_to_nav_notification).onClick(binding.navView)
+//    }
 
     private fun saveLocale(lan: Int) {
         preference.language = if (lan == 0) "en" else "am"

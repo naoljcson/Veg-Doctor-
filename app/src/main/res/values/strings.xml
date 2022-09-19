@@ -10,6 +10,7 @@
     <string name="menu_about_agtrain">About AgTrain</string>
     <string name="menu_about_hort_life_project">About Horti-Life Project</string>
     <string name="menu_references">References</string>
+    <string name="menu_notification">Notification</string>
 
     <string name="tab_text_1">Description</string>
     <string name="tab_text_2">Products</string>
